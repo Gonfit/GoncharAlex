@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task from the teacher</title>
+    <style>
+        del {
+         color: red;
+        }
+        ins {
+            color:blue
+        }
+       </style>
 </head>
 <body>
     <h1 align="center">Заголовок первого уровня</h1> 
@@ -27,24 +35,30 @@
     <p>
         <h3>Семантические и функциональные строчные теги</h3>
         Пожелания автора: <br>
-        <font color="red"><s>Данный текст убрать из монографии</s></font>  
-        и заменит его на <font color="blue"><u>вновь помещенный текст</u>.</font> 
+        <del>Данный текст убрать из монографии</del>
+         и заменит его на <ins>вновь помещенный текст</ins> 
     </p>
     <hr>
     <p>
         <h3>Работа со строчными и блоковыми цитатами</h3>
         Цитата короткая: <br>
-        <i>И всё-таки она вертится!</i>
+        <q>
+            И всё-таки она вертится!
+        </q>
+        
         <p>
             Цитата занимающая несколько предложений:
-        </p> 
-        <ul type="none">
-            <li>О сколько нам открытий чудных</li>
-            <li>Готовят просвещенья дух</li>
-            <li>И опыт, сын ошибок трудных,</li>
-            <li>И гений, парадоксов друг,</li>
-            <li>И случай, бог изобретатель...</li>
-        </ul>
+        
+        <blockquote>
+            О сколько нам открытий чудных <br>
+            Готовят просвещенья дух <br>
+            И опыт, сын ошибок трудных, <br>
+            И гений, парадоксов друг, <br>
+            И случай, бог изобретатель... 
+        </blockquote>
+        </p>
+            
+        
     </p>
     <hr>
     <p>
@@ -59,14 +73,17 @@
             <h3>Теги формирования машинного языка</h3>
             При выполнении програмного кода на языке PERL:
             <p>
-                <font face="Cambria Math">
-                #!/usr/local/bin/perl <br>
-                print "Content‐type: text/html\n\n"; <br>
-                print "&lt;H1&gt;Hello World&lt;/H1&gt;\n";<br>
-                </font>
+                <code>
+                    #!/usr/local/bin/perl <br>
+                    print "Content‐type: text/html\n\n"; <br>
+                    print "&lt;H1&gt;Hello World&lt;/H1&gt;\n";<br>
+                </code>
             </p>
             Программа выведет: <br>
-            <font face="Cambria Math">Hello, World</font> <br>
+            <code>
+                Hello, World<br>
+            </code>
+            
             <br>
             Однако в браузере у нас будет отображаться результат выполнения этой программы: <br>
             <br>
