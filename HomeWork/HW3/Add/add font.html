@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+</head>
+<body>
+    
+        <p> 
+         Если при использовании тега &lt;font&gt; в атрибут <var>color</var> написать какой-либо тект на латинице, 
+         например "candy" интерпритатор добавит <font color="candy"> цвет для текста</font>.
+        </p>
+        <p>
+            Но почему так происходит? Для этого запустим режим отладчика и обратим внимание на формировагние цвета во вкладке Style. <br>
+            И мы там увидим, что цвет выбран в режиме RGB набором цифр. <br>
+            <img src="browser.JPG" height="600" alt="screenshot browser">
+        </p>
+        <p>
+            А давайте этот набор цифр введем на ресурсе <a href="https://hslpicker.com/">https://hslpicker.com/</a> в графе RGBA, 
+            и обратим внимание на изменившуюся запись в графе HEX. <br>
+            <img src="hslpicker.JPG" height="600" alt="screenshot hslpicker">
+        </p>
+        <p>
+            Вот и разгадка. Интерпритатор воспринимает знаки из 16-ричной системы счисления, а знаки не из нее, преобразует в 0. <br>
+            Поэтому и получается такой интересный цветовой код.
+        </p>
+    
+</body>
+</html>
