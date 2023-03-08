@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h3{
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 42px;
+line-height: 120%;
+/* or 50px */
+margin-left: auto;
+margin-right: auto;
+
+text-align: center;
+
+/* header color */
+
+color: #2B2C54;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 120%;
+    /* or 72px */
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+    
+    /* header color */
+    
+    color: #2B2C54;
+    }
+
+.w575{
+    width: 575px;
+}
