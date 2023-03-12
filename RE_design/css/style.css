@@ -256,19 +256,18 @@ p.intro {
     margin-top: 66px;
 }
 
-.program__block__college ul li:nth-child(1) {
+.program__block__college ul li {
     padding: 30px;
     padding-top: 228px;
     width: 826px;
     height: 560px;
+    
+}
+.program__block__college ul li:nth-child(1) {
     background: url('../img/programm_college_art.jpg') no-repeat center;
 }
 
 .program__block__college ul li:nth-child(2) {
-    padding: 30px;
-    padding-top: 228px;
-    width: 826px;
-    height: 560px;
     background: url('../img/programm_college_pro.jpg') no-repeat center;
 }
 
