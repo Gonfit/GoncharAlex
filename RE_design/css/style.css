@@ -12,6 +12,7 @@ body {
     font-weight: 400;
     color: #2b2c54;
     height: 10000px;
+    background-color: pink;
 }
 
 .container {
@@ -37,12 +38,29 @@ h2 {
     margin-top: 120px;
 }
 
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #2B2C54;
+}
+
 h2.mt87 {
     margin-top: 87px;
 }
 
-h2.mt120 {
-    margin-top: 120px;
+h2.mb50 {
+    margin-bottom: 50px;
+}
+
+div.mt50 {
+    margin-top: 50px;
+}
+
+div.mt40 {
+    margin-top: 40px;
 }
 
 h2 span {
@@ -73,6 +91,18 @@ h2 span.left::before {
     padding-top: 15px;
 }
 
+h2 span.center::before {
+    content: "";
+    background: url("../img/little_spiral.png") no-repeat;
+    position: absolute;
+    width: 276px;
+    height: 81px;
+    top: 4px;
+    left: 262px;
+    z-index: -1;
+    padding-top: 15px;
+}
+
 h2.icon__left {
     /* background: url("../img/h-left-icon.png") no-repeat 34% -1px; */
     
@@ -89,10 +119,17 @@ p.intro {
     
     /* header color */
     
-    color: #2B2C54;
-    
-    opacity: 0.7;
+    color: rgba(43, 44, 84, 0.7);
     }
+
+    p.intro_add {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: left;
+        color: rgba(43, 44, 84, 0.7);
+        }
     
     p.mt43 {
         margin-top: 43px;
@@ -321,3 +358,50 @@ p.intro {
     padding-top: 33px;
     box-shadow: 0px 30px 60px rgba(43, 44, 84, 0.1);
 }
+
+/* select */
+
+.select {}
+
+.cells {
+    height: 264px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.cells:last-child {
+    height: 264px;
+    display: flex;
+    justify-content: start;
+    margin-left: 197px;
+   
+}
+
+.style {
+    flex-basis: 398px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.style h5 {
+    padding-top: 18px;
+}
+
+.style p {
+    padding-top: 15px;
+}
+
+
+.style::before {
+    content: "";
+    background: url(../img/white_fon.png) center no-repeat;
+    position: absolute;
+    width: 182px;
+    height: 94px;
+    left: -30px;
+    top: 0px;
+    z-index: -1;
+}
+
+ 
