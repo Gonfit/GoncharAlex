@@ -7,14 +7,14 @@
     <title>Document</title>
 
     <style>
-        a{
-            content: url(extref.png);
-        }
+        a:not(:last-of-type){
+            display: inline-block;
+            width: 100px;
+            padding-left: 15px;
+            background: url(extref.png) no-repeat 2px;
 
-        a:last-of-type{
-            content: "";
         }
-
+        
         .name{
             font-size: x-large;
             font-weight: 600;
