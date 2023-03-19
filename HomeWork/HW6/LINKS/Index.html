@@ -70,10 +70,41 @@
             border-style: solid;
         }
 
+        .left{
+            float: left; 
+            border-color: transparent red transparent transparent  ;
+            border-style: solid;
+            width: 150px;
+            text-align: center;
+        }
+
+        .float div:last-child{
+            border-color: transparent;
+            border-style: solid;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .basic{
+            flex-basis: 150px;
+            border-color: transparent red transparent transparent  ;
+            border-style: solid;
+            text-align: center;
+        }
+
+        .flex div:last-child{
+            border-color: transparent;
+            border-style: solid;
+        }
+
+
     </style>
 </head>
 <body>
-    <div class="table">
+    <div class="table"> <!--табличная верстка. 
+        Легко сделать горизонтальное расположение и одинаковые расстояния между элементами. Но устаревшее. При ресайзе экрана все сжимается не смотря на настройки-->
         <table>
             <tr>
                 <td><a href="#" target="_blank">первая ссылка</a></td>
@@ -85,7 +116,7 @@
         </table>
     </div>
     <br>
-    <div class="list">
+    <div class="list"> <!--через список. Понятный принцип заполнения. Для перевода в горизонтальную плоскость нужно использовать Flex. Дополнительно надо убирать атрибуты списка-->
         <ul>
             <li><a href="#" target="_blank">первая ссылка</a></li>
             <li><a href="#" target="_blank">вторая ссылка</a></li>
@@ -95,7 +126,8 @@
         </ul>
     </div>
     <br>
-    <div class="link">
+    <div class="link"> <!--просто ссылки. Располагаются горизонтально сразу, но имеют строчный формат, поэтому невозможно использовать блочные параметры для настройки. 
+        Необходимо добавлять надстройки для работы как блочными-->
         
             <a href="#" target="_blank">первая ссылка</a>
             <a href="#" target="_blank">вторая ссылка</a>
@@ -104,6 +136,27 @@
             <a href="#" target="_blank">пятая ссылка</a>
         
     </div>
+    <br>
+    <div class="float"> <!--использования обтекания через Float. Для таких простых структур особых затруднений не вызывает. 
+        Но если структура усложнится появляется необходимость в точной настройке размеров и использовании различных распорок-->
+        
+        <div class="left"><a href="#" target="_blank">первая ссылка</a></div>
+        <div class="left"><a href="#" target="_blank">вторая ссылка</a></div>
+        <div class="left"><a href="#" target="_blank">третья ссылка</a></div>
+        <div class="left"><a href="#" target="_blank">четвертая ссылка</a></div>
+        <div class="left"><a href="#" target="_blank">пятая ссылка</a></div>
     
+    </div>
+    <br> <br>
+    <div class="flex"> <!--обтекание через Flex. Для таких простых структур особых затруднений не вызывает. 
+        Но если структура усложнится появляется необходимость добаления параметров позволяющих правильно применять адаптивный дизайн -->
+        
+        <div class="basic"><a href="#" target="_blank">первая ссылка</a></div>
+        <div class="basic"><a href="#" target="_blank">вторая ссылка</a></div>
+        <div class="basic"><a href="#" target="_blank">третья ссылка</a></div>
+        <div class="basic"><a href="#" target="_blank">четвертая ссылка</a></div>
+        <div class="basic"><a href="#" target="_blank">пятая ссылка</a></div>
+    
+    </div>
 </body>
 </html>
