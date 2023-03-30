@@ -10,11 +10,7 @@ font-family: 'Montserrat', sans-serif; */
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: #2b2c54;
-    height: 10000px;
-    background-image: url(../img/light_blue_fon.png), url(../img/blue_fon.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 49% 30%, 38% 28.4%;
+    
 }
 
 .container {
@@ -369,6 +365,7 @@ p.intro {
     height: 264px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
    
 }
 
