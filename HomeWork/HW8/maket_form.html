@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKET_FORM</title>
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    form{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .head{
+        float: left;
+    }
+    .head_chek{
+        float: left;
+    }
+    textarea{
+        width: 100%;
+        height: auto;
+    }
+    .ml100{
+        margin-left: 182px;
+    }
+    .ml100_chek{
+        margin-left: 182px;
+    }
+    .art{
+        width: 100%;
+    }
+    .ml100 br{
+        display: none;
+    }
+    @media all and (max-width:520px){
+        .head{
+            float: none;
+        }
+        .ml100{
+            margin-left: auto;
+        }
+        .ml100 br{
+        display: inline;
+        }
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div>
+<p>
+    Для публикации вашей статьи заполните, пожалуйста, следующую форму: <br> <br>
+</p>
+
+<form action="http://fe.it-academy.by/TestForm.php" method="get">
+    
+    <span class="head">Название статьи:</span>
+    <div class="ml100"> 
+        <input class="art" type="text" name="article"> 
+    </div>
+    <span class="head">Рубрика:</span>
+    <div class="ml100">
+        <select name="rubric">
+            <option value="1" selected>Программирование</option>
+            <option value="2">Иностранные языки</option>
+            <option value="3">Дизайн</option>
+            <option value="4">Реклама</option>
+        </select>
+    </div>  
+    
+    <span class="head">Публикация:</span>
+    <div class="ml100">
+        <input type="radio" name="card" value="a1">на сайте <br>
+        <input type="radio" name="card" value="a2">в журнале <br>
+        <input type="radio" name="card" value="a3">на сайте и в журнале <br>
+    </div>
+    
+    <span class="head_chek">Разрешить комментарии:</span>
+    <div class="ml100_chek">
+        <input type="checkbox" name="comment">
+    </div>
+    
+    Текст статьи:
+    <textarea  name="mytext"></textarea> <br>
+    <input type="submit" value="Опубликовать!">
+</form>
+
+    </div>
+</body>
+</html>
