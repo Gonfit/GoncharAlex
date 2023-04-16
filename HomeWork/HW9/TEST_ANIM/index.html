@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST_ANIM</title>
+    <style>
+        @keyframes anim1{
+            from {background-color: blue;}
+            50%{background-color: red;}
+            to{background-color: blue;}
+            
+        }
+        @keyframes anim2{
+            from {background-color: red;}
+            50%{background-color: blue;}
+            to{background-color: red;}
+        }
+        @keyframes anim3{
+            from {left: 0px;}
+            50%{left: 1000px;}
+            to{left: 0px;}
+        }
+
+        @keyframes anim4{
+            from {transform: scale(1.2);}
+            50%{transform: scale(0.8);}
+            to{transform: scale(1.2);}
+        }
+        /*@keyframes back{
+            100%{background-position: 80px 0;}
+        }*/
+        .flex{
+            margin-left: 20px;
+            width: 400px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .blink1{
+            width: 200px;
+            height: 50px;
+            border-radius: 50% 0 0 0;
+            
+            animation: anim1 1s infinite;
+        }
+        .blink2{
+            width: 200px;
+            height: 50px;
+            border-radius: 0 50%  0 0;
+           
+            animation: anim2 1s infinite;
+        }
+        /*.blink0{
+            width: 100px;
+            height: 50px;
+            background: linear-gradient(90deg, red, blue);
+            background-position: 0 0;
+            animation: back .6s infinite alternate;
+        }*/
+    .dinamic{
+        margin-top: 15px;
+        margin-left: 20px;
+        width: 400px;
+        height: 150px;
+        background-color: aqua;
+        transition: transform 0.5s;
+        
+    }
+    .circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 20px;
+        background-color: brown;
+        position: relative;
+    }
+    .all:hover > .dinamic{
+        
+        animation: anim4 2s infinite;
+    }
+    .all:hover > .circle{
+        animation: anim3 3s linear infinite;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="all">
+    <div class="flex">
+        <div class="blink1"></div>
+        <!--<div class="blink0"></div>-->
+        <div class="blink2"></div>
+    </div>
+    <div class="dinamic"></div>
+    <div class="circle"></div>
+    </div>
+</body>
+</html>
