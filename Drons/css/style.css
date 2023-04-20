@@ -183,35 +183,35 @@ header .container .basket {
   width: 422px;
   height: 258px;
   background: #1E1D1D;
-  padding: 58px 33px 62px 30px;
+  padding: 58px 35px 62px 32px;
   text-align: initial;
 }
 
 /* line 156, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.blok_advantage .container .credence div img {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 11px;
+}
+
+/* line 164, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage .container .credence div h4 {
   font-size: 22px;
   font-weight: 400;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
-/* line 162, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 170, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage .container .credence div .insert {
   font-size: 18px;
   color: #fff;
   font-weight: 300;
   line-height: 31px;
   clear: both;
-}
-
-/* line 170, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.blok_advantage .container .credence div h4::before {
-  content: url(../img/IconPeople.svg);
-  display: block;
-  float: left;
-  width: 40px;
-  height: 40px;
-  margin-right: 11px;
+  margin-top: 21px;
 }
 
 /*# sourceMappingURL=style.css.map */

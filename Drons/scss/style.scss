@@ -151,13 +151,21 @@ header{
             width: 422px;
             height: 258px;
             background: #1E1D1D;
-            padding: 58px 33px 62px 30px;
+            padding: 58px 35px 62px 32px;
             text-align: initial;
+            img{
+                display: block;
+                float: left;
+                width: 40px;
+                height: 40px;
+                margin-right: 11px;
+
+            }
             h4{
             font-size: 22px;
             font-weight: 400;
             color: #fff;
-            margin-top: 10px;
+            margin-top: 5px;
             }
             .insert{
                 font-size: 18px;
@@ -165,15 +173,8 @@ header{
                 font-weight: 300; 
                 line-height: 31px;
                 clear: both;
+                margin-top: 21px;
 
-            }
-            h4::before{
-            content: url(../img/IconPeople.svg);
-            display: block;
-            float: left;
-            width: 40px;
-            height: 40px;
-            margin-right: 11px;
             }
            }
         }   
