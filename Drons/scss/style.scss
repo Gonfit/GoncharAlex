@@ -22,6 +22,37 @@ li{
     margin: 0 auto;
     
 }
+.out{
+    position: relative;
+    left: 0;
+    top: 44px;
+    font-weight: 700;
+    font-size: 120px;
+    color: rgba(255, 255, 255, 0.2);
+    span{
+        position: absolute;
+        left: 6px;
+        top: 57px;
+        font-weight: 400;
+        font-size: 48px;
+        color: #02E602;
+    }
+}
+button{
+    appearance: none;
+    width: 288px;
+    height: 62px;
+    margin-left: 45px;
+    background-color: #1E1D1D;
+    border: 1px solid #02E602;
+    color: #02E602;
+    font-family: 'RF Rufo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    cursor: pointer;
+}
 header{
     
     /*width: 1920px;*/
@@ -121,10 +152,11 @@ header{
     z-index: -1;
 }
 .blok_advantage{
+    margin-top: 10px;
     background: url(../img/iconDron.png) 87% 34% no-repeat;
     .container{
         
-        .out{
+        /*.out{
             position: relative;
             left: 0;
             top: 44px;
@@ -139,7 +171,7 @@ header{
                 font-size: 48px;
                 color: #02E602;
             }
-        }
+        }*/
     .credence{
         margin-top: 107px;
         width: 1302px;
@@ -179,4 +211,71 @@ header{
            }
         }   
     }
+}
+
+.block_products{
+    margin-top: 56px;
+    position: relative;
+    overflow: hidden;
+    p.sale{
+        position: relative;
+        width: 436px;
+        height: 103px;
+        left: -290px;
+        top: 340px;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 100px;
+        text-transform: uppercase;
+        color: #46464626;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: rotate(-90deg);
+    }
+   
+    .container{
+        .top_sales{
+            margin-top: 2px;
+            width: 1302px;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+           
+            div{
+                width: 422px;
+                height: 629px;
+                background: #1E1D1D;
+                padding: 14px 25px 65px;
+                h3{
+                    margin: 27px 29px 30px 45px;
+                    font-size: 34px;
+                    line-height: 34px;
+                    font-weight: 400;
+                }
+                span{
+                    margin-left: 45px;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 38px;
+                }
+                .price{
+                    display: block;
+                    font-size: 30px;
+                    line-height: 30px;
+                    margin-top: 20px;
+                    margin-bottom: 19px;
+                }
+                
+            }
+        }
+    }
+}
+.block_products::before{
+    content: url(../img/iconLine.svg);
+    position: absolute;
+    display: block;
+    width: 586px;
+    height: 476px;
+    top: 218px;
+    right: 280px;
+    z-index: -1;
 }
