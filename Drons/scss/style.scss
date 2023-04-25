@@ -57,6 +57,22 @@ button:hover{
     background-color:  #02E602;
     color: #181818;
 }
+
+h4{
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 5px;
+    }
+    .insert{
+        font-size: 18px;
+        color: #fff; 
+        font-weight: 300; 
+        line-height: 31px;
+        clear: both;
+        margin-top: 21px;
+
+    }
 header{
     
     /*width: 1920px;*/
@@ -233,7 +249,7 @@ header{
         font-size: 100px;
         line-height: 100px;
         text-transform: uppercase;
-        color: #46464626;
+        color: rgba(70, 70, 70, 0.26);
         text-shadow: 0px 4px 4px #00000040;
         transform: rotate(-90deg);
     }
@@ -375,7 +391,7 @@ header{
             font-size: 100px;
             line-height: 100px;
             text-transform: uppercase;
-            color: #46464626;
+            color: rgba(70, 70, 70, 0.26);
             text-shadow: 0px 4px 4px #00000040;
             transform: rotate(-90deg);
         }
@@ -410,6 +426,20 @@ header{
             margin-top: 105px;
             display: flex;
             justify-content: space-between;
+        }
+    }
+}
+
+.news{
+    margin-top: 20px;
+    .container{
+        .news_block{
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 402px;
+                height: 607px;
+            }
         }
     }
 }
