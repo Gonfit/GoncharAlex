@@ -173,7 +173,7 @@ header{
 }
 .blok_advantage{
     margin-top: 10px;
-    background: url(../img/iconDron.png) 87% 34% no-repeat;
+    background: url(../img/iconDron.png) 88% 29% no-repeat;
     .container{
         
         /*.out{
@@ -205,37 +205,37 @@ header{
             background: #1E1D1D;
             padding: 58px 35px 62px 32px;
             text-align: initial;
-            img{
-                display: block;
-                float: left;
-                width: 40px;
-                height: 40px;
-                margin-right: 11px;
+                img{
+                    display: block;
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 11px;
 
+                }
+                h4{
+                    font-size: 22px;
+                    font-weight: 400;
+                    color: #fff;
+                    margin-top: 5px;
+                }
+                .insert{
+                    font-size: 18px;
+                    color: #fff; 
+                    font-weight: 300; 
+                    line-height: 31px;
+                    clear: both;
+                    margin-top: 21px;
+                }
             }
-            h4{
-            font-size: 22px;
-            font-weight: 400;
-            color: #fff;
-            margin-top: 5px;
-            }
-            .insert{
-                font-size: 18px;
-                color: #fff; 
-                font-weight: 300; 
-                line-height: 31px;
-                clear: both;
-                margin-top: 21px;
-
-            }
-           }
+            
         }   
     }
 }
 
 .block_products{
     margin-top: 56px;
-    background: url(../img/iconLine.svg) 95% 179% no-repeat;
+    background: url(../img/iconLine.svg) 96% 179% no-repeat;
     /*position: relative;
     overflow: hidden;*/
     p.sale{
@@ -373,11 +373,11 @@ header{
 .region{
     margin-top: 10px;
     .container{
-        embed{
+        object{
             /*position: relative;
             left: 620px;
             bottom: 1150px;*/
-            margin-left: 620px;
+            margin-left: 520px;
             margin-top: -1150px;
         }
         p.map{
@@ -434,12 +434,50 @@ header{
     margin-top: 20px;
     .container{
         .news_block{
+            margin-top: 105px;
             display: flex;
             justify-content: space-between;
             div{
-                width: 402px;
+                width: 422px;
                 height: 607px;
-            }
+                h4{
+                    margin-top: 50px;
+                }
+                p{
+                    margin-top: 30px;
+                }
+                .read{
+                    display: block;
+                    margin-top: 30px;
+                    color: #02E602;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+            }   
         }
+    }
+}
+footer{
+    margin-top: 125px;
+    border-top: #02E602 solid 1px;
+    height: 99px;
+    
+    .container{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+            .logo{
+                width: 193px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .social{
+                width: 380px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
     }
 }
