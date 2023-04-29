@@ -1,3 +1,5 @@
+$colgr: #02E602;
+
 *{
     margin: 0;
     padding: 0;
@@ -35,7 +37,7 @@ li{
         top: 57px;
         font-weight: 400;
         font-size: 48px;
-        color: #02E602;
+        color: $colgr;
     }
 }
 button{
@@ -44,8 +46,8 @@ button{
     height: 62px;
     margin-left: 45px;
     background-color: #ffffff00;
-    border: 1px solid #02E602;
-    color: #02E602;
+    border: 1px solid $colgr;
+    color: $colgr;
     font-family: 'RF Rufo';
     font-style: normal;
     font-weight: 400;
@@ -54,7 +56,7 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background-color:  #02E602;
+    background-color:  $colgr;
     color: #181818;
 }
 
@@ -189,7 +191,7 @@ header{
                 top: 57px;
                 font-weight: 400;
                 font-size: 48px;
-                color: #02E602;
+                color: $colgr;
             }
         }*/
     .credence{
@@ -413,7 +415,7 @@ header{
         }
         .list{
             ul li:hover{
-                color: #02e602;
+                color: $colgr;
             }
         }
     }
@@ -449,7 +451,7 @@ header{
                 .read{
                     display: block;
                     margin-top: 30px;
-                    color: #02E602;
+                    color: $colgr;
                     font-weight: 300;
                     font-size: 16px;
                     line-height: 16px;
@@ -460,7 +462,7 @@ header{
 }
 footer{
     margin-top: 125px;
-    border-top: #02E602 solid 1px;
+    border-top: $colgr solid 1px;
     height: 99px;
     
     .container{
