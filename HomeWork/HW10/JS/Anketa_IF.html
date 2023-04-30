@@ -39,12 +39,18 @@
             ageStr = prompt('Введите ваш возраст корректно:');
         }
 
-        var sex = confirm('Ваш пол мужской?')
+        var sex = confirm('Ваш пол мужской?');
+        if (sex===true){
+            var pol='Мужской';
+        }
+        else{
+            var pol='Женский';
+        }
 
-        if (age>=65){
+        if (age>=63){
             var pension='Да';
         }
-        else if ((age>=63)&&(sex===false)){
+        else if ((age>=58)&&(sex===false)){
             var pension='Да';
         }
         else {
@@ -57,8 +63,9 @@
         var ageStr = 'Ваш возраст в годах: ' + age;
         var ageday = 'Ваш возраст в днях: ' + age*365 ;
         var afterday = 'Через 5 лет вам будет: ' + (age+5) ;
-        var pensionStr = 'ВЫ на пенсии: ' + pension
-        alert (FIO + '\n' + ageStr + '\n' + ageday + '\n'+ afterday +'\n' + pensionStr)
+        var polStr = 'Ваш пол: ' + pol;
+        var pensionStr = 'ВЫ на пенсии: ' + pension;
+        alert (FIO + '\n' + ageStr + '\n' + ageday + '\n'+ afterday +'\n' + polStr + '\n' + pensionStr)
 
 
     </script>

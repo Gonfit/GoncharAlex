@@ -10,48 +10,52 @@
 
 <body>
     <script>
-        var name1Str = prompt('Введите вашу фамилию:');
         var coint=1;
         while (coint===1) {
+            var name1Str = prompt('Введите вашу фамилию:');
             var name1 = parseInt(name1Str);
             var coint=((isNaN(name1))&&(name1Str!==''))
             ?0
-            :name1Str = prompt('Введите вашу фамилию корректно:');
+            :1;
         }
-        var name2Str = prompt('Введите ваше имя:');
+
         var coint=1;
         while (coint===1) {
+            var name2Str = prompt('Введите ваше имя:');
             var name2 = parseInt(name2Str);
             var coint=((isNaN(name2))&&(name2Str!==''))
             ?0
-            :name2Str = prompt('Введите ваше имя корректно:');
+            :1;
         }
-        var name3Str = prompt('Введите ваше отчество:');
-        while (true) {
+        
+        var coint=1;
+        while (coint===1) {
+            var name3Str = prompt('Введите ваше отчество:');
             var name3 = parseInt(name3Str);
-            if ((isNaN(name3))&&(name3Str!==''))
-                break;
-            name3Str = prompt('Введите ваше отчество корректно:');
+            var coint=((isNaN(name3))&&(name3Str!==''))
+            ?0
+            :1;
         }
-        var ageStr = prompt('Введите ваш возраст:');
-        while (true) {
+        
+        var coint=1;
+        while (coint===1) {
+            var ageStr = prompt('Введите ваш возраст:');
             var age = parseInt(ageStr);
-            if (!isNaN(age))
-                break;
-            ageStr = prompt('Введите ваш возраст корректно:');
+            var coint=(!isNaN(age))
+            ?0
+            :1;
         }
 
-        var sex = confirm('Ваш пол мужской?')
+        var sex = confirm('Ваш пол мужской?');
+        var pol= (sex===true)
+        ?'Мужской'
+        :'Женский';
 
-        if (age>=65){
-            var pension='Да';
-        }
-        else if ((age>=63)&&(sex===false)){
-            var pension='Да';
-        }
-        else {
-            var pension='Нет';
-        }
+        var pension=(age>=63)
+        ? 'Да'
+        :((age>=58)&&(sex===false))
+        ?'Да'
+        :'Нет';        
 
         //вывод
 
@@ -59,8 +63,9 @@
         var ageStr = 'Ваш возраст в годах: ' + age;
         var ageday = 'Ваш возраст в днях: ' + age*365 ;
         var afterday = 'Через 5 лет вам будет: ' + (age+5) ;
-        var pensionStr = 'ВЫ на пенсии: ' + pension
-        alert (FIO + '\n' + ageStr + '\n' + ageday + '\n'+ afterday +'\n' + pensionStr)
+        var polStr = 'Ваш пол: ' + pol;
+        var pensionStr = 'ВЫ на пенсии: ' + pension;
+        alert (FIO + '\n' + ageStr + '\n' + ageday + '\n'+ afterday +'\n' + polStr + '\n' + pensionStr)
 
 
     </script>
