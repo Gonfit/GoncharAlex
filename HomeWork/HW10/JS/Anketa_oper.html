@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa_oper</title>
+</head>
+
+<body>
+    <script>
+        var name1Str = prompt('Введите вашу фамилию:');
+        var coint=1;
+        while (coint===1) {
+            var name1 = parseInt(name1Str);
+            var coint=((isNaN(name1))&&(name1Str!==''))
+            ?0
+            :name1Str = prompt('Введите вашу фамилию корректно:');
+        }
+        var name2Str = prompt('Введите ваше имя:');
+        var coint=1;
+        while (coint===1) {
+            var name2 = parseInt(name2Str);
+            var coint=((isNaN(name2))&&(name2Str!==''))
+            ?0
+            :name2Str = prompt('Введите ваше имя корректно:');
+        }
+        var name3Str = prompt('Введите ваше отчество:');
+        while (true) {
+            var name3 = parseInt(name3Str);
+            if ((isNaN(name3))&&(name3Str!==''))
+                break;
+            name3Str = prompt('Введите ваше отчество корректно:');
+        }
+        var ageStr = prompt('Введите ваш возраст:');
+        while (true) {
+            var age = parseInt(ageStr);
+            if (!isNaN(age))
+                break;
+            ageStr = prompt('Введите ваш возраст корректно:');
+        }
+
+        var sex = confirm('Ваш пол мужской?')
+
+        if (age>=65){
+            var pension='Да';
+        }
+        else if ((age>=63)&&(sex===false)){
+            var pension='Да';
+        }
+        else {
+            var pension='Нет';
+        }
+
+        //вывод
+
+        var FIO = 'Ваше ФИО: ' + name1Str +' '+ name2Str + ' ' + name3Str;
+        var ageStr = 'Ваш возраст в годах: ' + age;
+        var ageday = 'Ваш возраст в днях: ' + age*365 ;
+        var afterday = 'Через 5 лет вам будет: ' + (age+5) ;
+        var pensionStr = 'ВЫ на пенсии: ' + pension
+        alert (FIO + '\n' + ageStr + '\n' + ageday + '\n'+ afterday +'\n' + pensionStr)
+
+
+    </script>
+
+</body>
+
+</html>
