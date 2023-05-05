@@ -1,5 +1,6 @@
 $colgr: #02E602;
 
+
 *{
     margin: 0;
     padding: 0;
@@ -75,6 +76,31 @@ h4{
         margin-top: 21px;
 
     }
+
+ul.breadcrumb {
+    padding: 5px 16px;
+    list-style: none;
+        
+    }
+    ul.breadcrumb li {
+    display: inline;
+    font-size: 24px;
+    color: $colgr;
+    }
+    ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #fff;
+    content: "/\00a0";
+    }
+    ul.breadcrumb li a {
+    color: #fff;
+    text-decoration: none;
+    }
+    ul.breadcrumb li a:hover {
+    color: $colgr;
+    
+    }
+
 header{
     
     /*width: 1920px;*/
@@ -129,12 +155,26 @@ header{
     top: -28px;
     z-index: -1;
     .container{
+        .etno{
+            position: relative;
+            width: 487px;
+            height: 172px;
+            top: 125px;
+            font-size: 72px;
+        }
+        .protect{
+            width: 458px;
+            height: 80px;
+            margin-top: 170px;
+            font-size: 24px;
+            line-height: 40px;
+        }
         .agro{
-        position: relative;
-        width: 663px;
-        height: 258px;
-        top: 123px;
-        font-size: 72px;
+            position: relative;
+            width: 663px;
+            height: 258px;
+            top: 123px;
+            font-size: 72px;
         }
         .advantage{
         position: relative;
@@ -160,7 +200,32 @@ header{
                 }
 
             }
-        }   
+        }
+        .procent{
+            margin-top: 72px;
+            width: 700px;
+            height: 150px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            div{
+                width: 210px;
+                height: 76px;
+                img{
+                    display: block;
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 11px;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 400;
+                    
+                    margin-top: 5px;
+                }
+            }
+        }  
     }
     
 }
@@ -458,6 +523,44 @@ header{
                 }
             }   
         }
+    }
+}
+
+.service{
+    margin-top: 10px;
+    height: 458px;
+    
+    .container{
+       
+        .info{
+            margin-top: 80px;
+            width: 1055px;
+            height: 125px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 31px;
+            transition: height .25s;
+            overflow: hidden;
+        }        
+        .arrow{
+            position: relative;
+            margin-top: -94px;
+            text-align: center;
+            .gradient{
+                position: relative;
+                top: 0px;
+                width: 1310px;
+                height: 94px;
+                background: linear-gradient(0deg, #181818 0%, rgba(24, 24, 24, 0.63) 100%);
+            
+            }
+        }
+        .info:hover{
+            height: 250px;   
+        }
+        .info:hover + .arrow{
+            display: none;
+        } 
     }
 }
 footer{
