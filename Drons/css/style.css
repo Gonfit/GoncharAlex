@@ -707,7 +707,7 @@ footer .container .social {
   display: inline-block;
   width: 458px;
   height: 103px;
-  left: -290px;
+  left: -298px;
   top: 355px;
   font-weight: 700;
   font-size: 100px;
@@ -766,37 +766,214 @@ footer .container .social {
 
 /* line 703, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_problems {
+  height: 585px;
   background-image: url(../img/Etno/iconDrone_flying.svg), url(../img/Etno/iconLine.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom, top right;
 }
 
-/* line 709, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 710, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_problems .container .problem {
-  margin-top: 75px;
+  margin-top: 150px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-/* line 715, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 716, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_problems .container .problem div {
   width: 369px;
   height: auto;
   margin-bottom: 30px;
 }
 
-/* line 720, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 721, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_problems .container .problem div img {
   float: left;
 }
 
-/* line 724, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 725, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_problems .container .problem div p {
   font-size: 24px;
   font-weight: 300;
   padding-left: 50px;
   padding-right: 35px;
+}
+
+/* line 739, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container p.VertText {
+  position: relative;
+  display: inline-block;
+  width: 458px;
+  height: 103px;
+  left: -298px;
+  top: 520px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: rgba(70, 70, 70, 0.26);
+  text-shadow: 0px 4px 4px #00000040;
+  transform: rotate(-90deg);
+}
+
+/* line 743, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .VertText_R {
+  position: relative;
+  display: inline-block;
+  width: 458px;
+  height: 103px;
+  left: 1165px;
+  top: 525px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: rgba(70, 70, 70, 0.26);
+  text-shadow: 0px 4px 4px #00000040;
+  transform: rotate(90deg);
+}
+
+/* line 747, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .info_insect {
+  width: 1043px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 31px;
+}
+
+/* line 754, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type {
+  width: 1310px;
+  height: 615px;
+  background: url(../img/Etno/backCol.png) no-repeat top right;
+  padding-top: 80px;
+  padding-right: 85px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 31px;
+  margin-top: 70px;
+}
+
+/* line 765, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type img {
+  float: left;
+  margin-right: 45px;
+}
+
+/* line 770, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type .destroy {
+  display: inline-block;
+  width: 474px;
+  height: 99px;
+  margin-top: 45px;
+}
+
+/* line 776, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type .destroy p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+/* line 782, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type .destroy img {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 787, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type .destroy .destroy_insert {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 792, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type .destroy .destroy_insert img {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+/* line 798, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type .destroy .destroy_insert li {
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+/* line 805, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type .destroy ul li:last-of-type {
+  margin-left: 46px;
+}
+
+/* line 811, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type_R {
+  width: 1310px;
+  height: 615px;
+  background: url(../img/Etno/backCol.png) no-repeat top left;
+  padding-top: 80px;
+  padding-left: 85px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 31px;
+  margin-top: 70px;
+}
+
+/* line 822, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type_R img {
+  float: right;
+  margin-left: 45px;
+}
+
+/* line 827, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type_R .destroy {
+  display: inline-block;
+  width: 474px;
+  height: 99px;
+  margin-top: 45px;
+}
+
+/* line 833, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type_R .destroy p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+/* line 839, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type_R .destroy img {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 844, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type_R .destroy .destroy_insert {
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+/* line 850, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type_R .destroy .destroy_insert img {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+/* line 856, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type_R .destroy .destroy_insert li {
+  /*margin-left: 60px;*/
+  margin-bottom: 20px;
+}
+
+/* line 863, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type_R .destroy ul li:first-of-type {
+  margin-right: 12px;
+}
+
+/* line 866, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.block_insect .container .insect_type_R .destroy ul li:nth-of-type(2) {
+  margin-right: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
