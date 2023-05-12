@@ -863,10 +863,126 @@ footer {
                 ul li:first-of-type {
                     margin-right: 12px;
                 }
+
                 ul li:nth-of-type(2) {
                     margin-right: 12px;
                 }
 
+            }
+        }
+    }
+}
+
+.stageWork {
+    background-image: url(../img/Etno/iconLine_1.png), url(../img/Etno/iconLine_2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 7% 100%, 75% 50%;
+
+    .container {
+        .arrow {
+            img {
+                position: relative;
+                top: -325px;
+                left: 238px;
+                margin-right: 150px;
+            }
+        }
+
+        .arrow img:nth-of-type(2) {
+            margin-right: 185px;
+        }
+
+        .stages {
+            margin-top: 104px;
+            display: grid;
+            grid-template-columns: 311px 311px 311px 311px;
+            grid-template-rows: 202px 202px;
+            grid-column-gap: 22px;
+            grid-row-gap: 65px;
+            align-items: center;
+
+
+
+            .preparation {
+                background-color: #1E1D1D;
+                padding: 30px 40px 60px 30px;
+
+                img {
+                    float: left;
+                    margin-right: 15px;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 22px;
+                    line-height: 38px;
+                    margin-left: 55px;
+                }
+            }
+
+            .done {
+
+                p {
+
+                    font-weight: 700;
+                    font-size: 50px;
+                    line-height: 60px;
+                    text-transform: uppercase;
+                    color: rgba(70, 70, 70, 0.26);
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+
+                .center {
+                    text-align: center;
+                }
+
+            }
+
+        }
+    }
+}
+
+.needHelp {
+    .container {
+        .square {
+            margin: 0 auto;
+            width: 1230px;
+            height: 510px;
+            background-color: #1E1D1D;
+            padding-left: 76px;
+
+            .out {
+                top: 25px;
+            }
+
+            img {
+                float: right;
+                position: relative;
+                top: -260px;
+                right: 10px;
+            }
+
+            .form {
+                margin-top: 65px;
+                font-size: 24px;
+                line-height: 40px;
+            }
+
+            form {
+                margin-top: 80px;
+
+                input {
+                    width: 200px;
+                    margin-right: 42px;
+                    background-color: #1E1D1D;
+                    padding: 10px;
+                    font-family: 'RF Rufo';
+                    font-size: 18px;
+                    border: 0;
+                    border-bottom:1px solid;
+                    border-color: #4B4A4A;
+                    
+                }
             }
         }
     }
