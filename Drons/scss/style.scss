@@ -78,6 +78,10 @@ button {
     line-height: 28px;
     cursor: pointer;
 }
+form button{
+    width: 197px;
+    height: 58px;
+}
 
 button:hover {
     background-color: $colgr;
@@ -854,7 +858,7 @@ footer {
                     }
 
                     li {
-                        /*margin-left: 60px;*/
+
                         margin-bottom: 20px;
 
                     }
@@ -945,11 +949,13 @@ footer {
 .needHelp {
     .container {
         .square {
+            position: relative;
             margin: 0 auto;
             width: 1230px;
             height: 510px;
             background-color: #1E1D1D;
             padding-left: 76px;
+
 
             .out {
                 top: 25px;
@@ -958,32 +964,66 @@ footer {
             img {
                 float: right;
                 position: relative;
-                top: -260px;
-                right: 10px;
+                z-index: 1;
+                margin-top: -250px;
             }
 
-            .form {
+            .request {
                 margin-top: 65px;
                 font-size: 24px;
                 line-height: 40px;
             }
 
             form {
+                position: relative;
                 margin-top: 80px;
+                z-index: 1;
+                
 
                 input {
+
                     width: 200px;
                     margin-right: 42px;
-                    background-color: #1E1D1D;
+                    background-color: #1e1d1d00;
                     padding: 10px;
                     font-family: 'RF Rufo';
                     font-size: 18px;
                     border: 0;
-                    border-bottom:1px solid;
+                    border-bottom: 1px solid;
                     border-color: #4B4A4A;
-                    
-                }
+                    color: #fff;
+                }                
             }
+            
+
+            form input:hover {
+                border-color: #fff;
+            }
+
+            form input:focus {
+                outline: none;
+
+                border-color: $colgr;
+                color: #fff;
+            }
+
+            a {
+                display: inline-block;
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+        }
+
+        .square::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 35px;
+            width: 610px;
+            height: 585px;
+            background: url(../img/Etno/iconLine.svg) no-repeat center;
+            z-index: 0;
+
         }
     }
 }
