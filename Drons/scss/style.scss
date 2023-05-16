@@ -1,9 +1,9 @@
 $colgr: #02E602;
 
-@mixin VertText($left: -290px, $top: 403px, $transform: rotate(-90deg)) {
+@mixin VertText($width: 458px, $left: -290px, $top: 403px, $transform: rotate(-90deg)) {
     position: relative;
     display: inline-block;
-    width: 458px;
+    width: $width;
     height: 103px;
     left: $left;
     top: $top;
@@ -78,7 +78,8 @@ button {
     line-height: 28px;
     cursor: pointer;
 }
-form button{
+
+form button {
     width: 197px;
     height: 58px;
 }
@@ -107,6 +108,7 @@ h4 {
 
 ul.breadcrumb {
     padding: 5px 16px;
+    margin-top: 40px;
     list-style: none;
 
 }
@@ -741,11 +743,11 @@ footer {
 .block_insect {
     .container {
         p.VertText {
-            @include VertText(-298px, 520px);
+            @include VertText(498px, -298px, 520px);
         }
 
         .VertText_R {
-            @include VertText(1165px, 525px, rotate(90deg));
+            @include VertText(498px, 1165px, 525px, rotate(90deg));
         }
 
         .info_insect {
@@ -978,7 +980,7 @@ footer {
                 position: relative;
                 margin-top: 80px;
                 z-index: 1;
-                
+
 
                 input {
 
@@ -992,9 +994,9 @@ footer {
                     border-bottom: 1px solid;
                     border-color: #4B4A4A;
                     color: #fff;
-                }                
+                }
             }
-            
+
 
             form input:hover {
                 border-color: #fff;
@@ -1026,4 +1028,191 @@ footer {
 
         }
     }
+}
+
+.pageNews {
+    background-image: url(../img/News/iconDron.svg), url(../img/News/XMLID_1_.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 91% 4%, 0% 117%;
+
+    .container {
+        .out {
+            margin-top: -11px;
+        }
+
+        p.VertText {
+            @include VertText(500px, -310px, 305px);
+        }
+
+        .VertText_R {
+            @include VertText(570px, 580px, 1360px, rotate(90deg));
+        }
+
+        .fourNews {
+            margin-top: -59px;
+
+            .fullNews {
+                width: 1310px;
+                height: 388px;
+                background-color: #1E1D1D;
+                margin-top: 50px;
+                padding: 30px 65px 75px 30px;
+
+                img {
+                    float: left;
+
+                }
+
+                h4 {
+                    margin-top: 51px;
+                    margin-left: 554px;
+                }
+
+                .date {
+                    font-weight: 300;
+                    font-size: 16px;
+                    position: relative;
+                    left: 620px;
+                    top: -23px;
+                }
+
+                .insert {
+                    clear: none;
+                    margin: 8px 153px 30px 554px;
+
+                }
+
+                a {
+
+                    border: 0;
+                    border-bottom: 1px solid;
+                    border-color: $colgr;
+                    color: $colgr;
+                    margin-left: 54px;
+                    font-weight: 300;
+                    font-size: 16px;
+
+                }
+
+            }
+        }
+
+        .navbar {
+            width: 188px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 70px;
+            font-size: 40px;
+
+            a {
+                margin-right: 28px;
+            }
+        }
+
+        .navbar a:hover {
+
+            color: $colgr;
+        }
+
+        .navbar a.active {
+
+            color: $colgr;
+        }
+
+    }
+
+}
+
+.Spraying_service {
+    height: 505px;
+
+    .container {
+        .info {
+            margin-top: 110px;
+            width: 1031px;
+            height: 125px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            transition: height .25s;
+            overflow: hidden;
+        }
+
+        .arrow {
+            position: relative;
+            margin-top: -94px;
+            text-align: center;
+
+            .gradient {
+                position: relative;
+                top: 0px;
+                width: 1310px;
+                height: 94px;
+                background: linear-gradient(0deg, #181818 0%, rgba(24, 24, 24, 0.63) 100%);
+
+            }
+        }
+
+        .info:hover {
+            height: 250px;
+        }
+
+        .info:hover+.arrow {
+            display: none;
+        }
+    }
+}
+
+.Positive,
+.negative {
+    background: url(../img/Spraying/iconDron_1.svg) no-repeat 92% 15%;
+
+    .container {
+
+
+        p.VertText {
+            @include VertText(500px, -310px, 100px);
+        }
+
+        .VertText_R {
+            @include VertText(498px, 1135px, 320px, rotate(90deg));
+        }
+
+        .threeСolumns {
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                width: 422px;
+                height: max-content;
+                background-color: #1E1D1D;
+                padding: 47px 25px 60px;
+
+                img:first-of-type {
+                    float: left;
+                    margin-right: 15px;
+                }
+
+                .resume {
+                    margin-top: 45px;
+
+                    li {
+                        font-weight: 300;
+                        font-size: 18px;
+                        margin-top: 6px;
+
+                        p {
+                            margin-left: 38px;
+                            line-height: 31px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.negative {
+    margin-top: 70px;
+    background: none;    
 }
