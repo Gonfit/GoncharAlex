@@ -177,13 +177,49 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            .menuDrop{
+                position: relative;
+                display: inline-block;
+                .contentMenu{
+                    display: none;
+                    background-color: rgba(24, 24, 24, 0.705);
+                    position: absolute; 
+                    left: -160px;
+                    min-width: 290px;
+                    z-index: 2;
+                    padding: 20px 0px 15px 15px;
+                    a{
+                        display: block;
+                        height: 40px;
+                        margin-top: 15px;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 24px;
+                        img{
+                            float: left;
+                            margin-right: 15px;
+                            margin-top: -5px;
+                        }
+                    }
+                }
+            }
+            .menuDrop:hover .contentMenu {
+                display: block;
+            }
+            .contentMenu a:hover {
+                color: $colgr;
+            }
+            
 
         }
 
     }
 }
 
-.first_screen {
+.first_screen,
+.first_screenEtno,
+.first_screenSpray,
+.first_screenMap {
 
     background: url(../img/first_Background.jpg) center center no-repeat;
 
@@ -195,16 +231,32 @@ header {
     z-index: -1;
 
     .container {
-        .etno {
+        .sprayBig {
             position: relative;
             width: 487px;
+            height: 172px;
+            top: 205px;
+            font-size: 72px;
+        }
+        .sprayMini {
+            width: 458px;
+            height: 80px;
+            margin-top: 310px;
+            font-size: 24px;
+            line-height: 40px;
+        }
+
+
+        .etno {
+            position: relative;
+            width: 495px;
             height: 172px;
             top: 125px;
             font-size: 72px;
         }
 
         .protect {
-            width: 458px;
+            width: 545px;
             height: 80px;
             margin-top: 170px;
             font-size: 24px;
@@ -279,8 +331,20 @@ header {
     }
 
 }
+.first_screenEtno {
+    background-image: url(../img/Etno/bgBackground.jpg);
+}
+.first_screenSpray {
+    background-image: url(../img/Spraying/bgBackground.jpg);
+}
+.first_screenMap {
+    background-image: url(../img/Mapping/background.jpg);
+}
 
-.first_screen::after {
+.first_screen::after,
+.first_screenEtno::after,
+.first_screenSpray::after,
+.first_screenMap::after {
     content: "";
     background: url(../img/mask_first_screen.png) center center no-repeat;
     position: absolute;
@@ -499,15 +563,27 @@ header {
 
 .region {
     margin-top: 10px;
+    height: 970px;
 
     .container {
-        object {
-            /*position: relative;
-            left: 620px;
-            bottom: 1150px;*/
-            margin-left: 520px;
-            margin-top: -1150px;
+        .russia{
+            width: 840px;
+            height: 760px;
+            position: relative;
+            left: 510px;
+            bottom: 570px;
+            
+            // object {
+            //     // position: relative;
+            //     // left: 620px;
+            //     // bottom: 1150px;
+            //     // margin-left: 520px;
+            //     // margin-top: -700px;            
+                
+            
+            // }
         }
+        
 
         p.VertText {
             @include VertText;
@@ -658,7 +734,7 @@ footer {
 
     .container {
         p.VertText {
-            @include VertText(-298px, 355px);
+            @include VertText(458px,-298px, 355px);
         }
 
         .credence {
@@ -1123,7 +1199,7 @@ footer {
 
 }
 
-.Spraying_service {
+.Spraying_service, .air_photo {
     height: 505px;
 
     .container {
@@ -1214,5 +1290,62 @@ footer {
 
 .negative {
     margin-top: 70px;
-    background: none;    
+    background: none;
+}
+
+.nozzle {
+    background: url(../img/Spraying/XMLID_1_.svg) no-repeat center center;
+
+    .container {
+        p.VertText {
+            @include VertText(608px, -367px, 403px);
+        }
+
+        .twoColumns {
+            display: flex;
+            justify-content: space-around;
+
+            div {
+                width: 502px;
+                height: 688px;
+                background-color: #1E1D1D;
+                margin-top: 50px;
+                margin-bottom: 100px;
+                padding: 35px 70px 155px;
+
+
+
+                h3 {
+                    margin-top: 60px;
+                    margin-bottom: 40px;
+                    font-weight: 400;
+                    font-size: 34px;
+                    line-height: 34px;
+                }
+
+                .resume {
+
+
+                    li {                        
+                        margin-top: 6px;                       
+
+                        img {
+                            float: left;
+                            margin-right: 15px;
+                            margin-top: 10px;
+                            
+                        }
+
+                        p {
+                            margin-left: 38px;
+                            font-weight: 300;
+                            font-size: 24px;
+                            line-height: 40px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

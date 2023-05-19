@@ -179,8 +179,55 @@ header .container .basket {
   align-items: center;
 }
 
-/* line 186, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen {
+/* line 180, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+header .container .basket .menuDrop {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 183, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+header .container .basket .menuDrop .contentMenu {
+  display: none;
+  background-color: rgba(24, 24, 24, 0.705);
+  position: absolute;
+  left: -160px;
+  min-width: 290px;
+  z-index: 2;
+  padding: 20px 0px 15px 15px;
+}
+
+/* line 191, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+header .container .basket .menuDrop .contentMenu a {
+  display: block;
+  height: 40px;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* line 198, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+header .container .basket .menuDrop .contentMenu a img {
+  float: left;
+  margin-right: 15px;
+  margin-top: -5px;
+}
+
+/* line 206, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+header .container .basket .menuDrop:hover .contentMenu {
+  display: block;
+}
+
+/* line 209, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+header .container .basket .contentMenu a:hover {
+  color: #02E602;
+}
+
+/* line 219, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen,
+.first_screenEtno,
+.first_screenSpray,
+.first_screenMap {
   background: url(../img/first_Background.jpg) center center no-repeat;
   position: relative;
   /*margin: 0 auto 0;
@@ -190,26 +237,59 @@ header .container .basket {
   z-index: -1;
 }
 
-/* line 198, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .etno {
+/* line 234, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .sprayBig,
+.first_screenEtno .container .sprayBig,
+.first_screenSpray .container .sprayBig,
+.first_screenMap .container .sprayBig {
   position: relative;
   width: 487px;
+  height: 172px;
+  top: 205px;
+  font-size: 72px;
+}
+
+/* line 241, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .sprayMini,
+.first_screenEtno .container .sprayMini,
+.first_screenSpray .container .sprayMini,
+.first_screenMap .container .sprayMini {
+  width: 458px;
+  height: 80px;
+  margin-top: 310px;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+/* line 250, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .etno,
+.first_screenEtno .container .etno,
+.first_screenSpray .container .etno,
+.first_screenMap .container .etno {
+  position: relative;
+  width: 495px;
   height: 172px;
   top: 125px;
   font-size: 72px;
 }
 
-/* line 206, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .protect {
-  width: 458px;
+/* line 258, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .protect,
+.first_screenEtno .container .protect,
+.first_screenSpray .container .protect,
+.first_screenMap .container .protect {
+  width: 545px;
   height: 80px;
   margin-top: 170px;
   font-size: 24px;
   line-height: 40px;
 }
 
-/* line 214, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .agro {
+/* line 266, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .agro,
+.first_screenEtno .container .agro,
+.first_screenSpray .container .agro,
+.first_screenMap .container .agro {
   position: relative;
   width: 663px;
   height: 258px;
@@ -217,8 +297,11 @@ header .container .basket {
   font-size: 72px;
 }
 
-/* line 222, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .advantage {
+/* line 274, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .advantage,
+.first_screenEtno .container .advantage,
+.first_screenSpray .container .advantage,
+.first_screenMap .container .advantage {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -229,8 +312,11 @@ header .container .basket {
   top: 158px;
 }
 
-/* line 232, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .advantage img {
+/* line 284, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .advantage img,
+.first_screenEtno .container .advantage img,
+.first_screenSpray .container .advantage img,
+.first_screenMap .container .advantage img {
   position: relative;
   width: 946px;
   height: 117px;
@@ -238,19 +324,28 @@ header .container .basket {
   top: 0;
 }
 
-/* line 240, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .advantage p {
+/* line 292, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .advantage p,
+.first_screenEtno .container .advantage p,
+.first_screenSpray .container .advantage p,
+.first_screenMap .container .advantage p {
   font-size: 48px;
   line-height: 42px;
 }
 
-/* line 244, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .advantage p span {
+/* line 296, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .advantage p span,
+.first_screenEtno .container .advantage p span,
+.first_screenSpray .container .advantage p span,
+.first_screenMap .container .advantage p span {
   font-size: 24px;
 }
 
-/* line 251, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .procent {
+/* line 303, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .procent,
+.first_screenEtno .container .procent,
+.first_screenSpray .container .procent,
+.first_screenMap .container .procent {
   margin-top: 72px;
   width: 700px;
   height: 150px;
@@ -259,14 +354,20 @@ header .container .basket {
   flex-wrap: wrap;
 }
 
-/* line 259, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .procent div {
+/* line 311, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .procent div,
+.first_screenEtno .container .procent div,
+.first_screenSpray .container .procent div,
+.first_screenMap .container .procent div {
   width: 210px;
   height: 76px;
 }
 
-/* line 263, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .procent div img {
+/* line 315, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .procent div img,
+.first_screenEtno .container .procent div img,
+.first_screenSpray .container .procent div img,
+.first_screenMap .container .procent div img {
   display: block;
   float: left;
   width: 40px;
@@ -274,15 +375,36 @@ header .container .basket {
   margin-right: 11px;
 }
 
-/* line 271, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen .container .procent div p {
+/* line 323, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen .container .procent div p,
+.first_screenEtno .container .procent div p,
+.first_screenSpray .container .procent div p,
+.first_screenMap .container .procent div p {
   font-size: 18px;
   font-weight: 400;
   margin-top: 5px;
 }
 
-/* line 283, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.first_screen::after {
+/* line 334, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screenEtno {
+  background-image: url(../img/Etno/bgBackground.jpg);
+}
+
+/* line 337, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screenSpray {
+  background-image: url(../img/Spraying/bgBackground.jpg);
+}
+
+/* line 340, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screenMap {
+  background-image: url(../img/Mapping/background.jpg);
+}
+
+/* line 344, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.first_screen::after,
+.first_screenEtno::after,
+.first_screenSpray::after,
+.first_screenMap::after {
   content: "";
   background: url(../img/mask_first_screen.png) center center no-repeat;
   position: absolute;
@@ -292,13 +414,13 @@ header .container .basket {
   z-index: -1;
 }
 
-/* line 293, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 357, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage {
   margin-top: 10px;
   background: url(../img/iconDron.png) 88% 29% no-repeat;
 }
 
-/* line 297, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 361, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage .container {
   /*.out{
             position: relative;
@@ -318,7 +440,7 @@ header .container .basket {
         }*/
 }
 
-/* line 315, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 379, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage .container .credence {
   margin-top: 107px;
   width: 1302px;
@@ -328,7 +450,7 @@ header .container .basket {
   flex-wrap: wrap;
 }
 
-/* line 323, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 387, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage .container .credence div {
   width: 422px;
   height: 258px;
@@ -337,7 +459,7 @@ header .container .basket {
   text-align: initial;
 }
 
-/* line 330, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 394, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage .container .credence div img {
   display: block;
   float: left;
@@ -346,7 +468,7 @@ header .container .basket {
   margin-right: 11px;
 }
 
-/* line 339, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 403, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage .container .credence div h4 {
   font-size: 22px;
   font-weight: 400;
@@ -354,7 +476,7 @@ header .container .basket {
   margin-top: 5px;
 }
 
-/* line 346, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 410, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage .container .credence div .insert {
   font-size: 18px;
   color: #fff;
@@ -364,7 +486,7 @@ header .container .basket {
   margin-top: 21px;
 }
 
-/* line 360, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 424, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_products {
   margin-top: 56px;
   background: url(../img/iconLine.svg) 96% 179% no-repeat;
@@ -372,7 +494,7 @@ header .container .basket {
     overflow: hidden;*/
 }
 
-/* line 366, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 430, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_products p.VertText {
   position: relative;
   display: inline-block;
@@ -389,7 +511,7 @@ header .container .basket {
   transform: rotate(-90deg);
 }
 
-/* line 371, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 435, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_products .container .top_sales {
   margin-top: 2px;
   width: 1302px;
@@ -398,7 +520,7 @@ header .container .basket {
   justify-content: space-between;
 }
 
-/* line 378, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 442, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_products .container .top_sales div {
   width: 422px;
   height: 629px;
@@ -406,7 +528,7 @@ header .container .basket {
   padding: 14px 25px 65px;
 }
 
-/* line 384, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 448, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_products .container .top_sales div h3 {
   margin: 27px 29px 30px 45px;
   font-size: 34px;
@@ -414,7 +536,7 @@ header .container .basket {
   font-weight: 400;
 }
 
-/* line 391, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 455, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_products .container .top_sales div span {
   margin-left: 45px;
   font-weight: 400;
@@ -422,7 +544,7 @@ header .container .basket {
   line-height: 38px;
 }
 
-/* line 398, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 462, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_products .container .top_sales div .price {
   display: block;
   font-size: 30px;
@@ -431,7 +553,7 @@ header .container .basket {
   margin-bottom: 19px;
 }
 
-/* line 411, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 475, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .banner {
   margin-top: 110px;
   height: 650px;
@@ -440,20 +562,20 @@ header .container .basket {
   z-index: 0;
 }
 
-/* line 419, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 483, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .banner .container .request {
   position: relative;
   top: 153px;
   z-index: 1;
 }
 
-/* line 424, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 488, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .banner .container .request p {
   font-size: 72px;
   line-height: 48px;
 }
 
-/* line 429, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 493, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .banner .container .request span {
   display: block;
   margin-top: 50px;
@@ -462,7 +584,7 @@ header .container .basket {
   line-height: 54px;
 }
 
-/* line 437, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 501, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .banner .container .request button {
   margin-top: 70px;
   margin-left: 0px;
@@ -470,7 +592,7 @@ header .container .basket {
   height: 62px;
 }
 
-/* line 447, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 511, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .banner::after {
   content: "";
   background: url(../img/mask_banner.png) center center no-repeat;
@@ -482,13 +604,13 @@ header .container .basket {
   z-index: -1;
 }
 
-/* line 458, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 522, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .company {
   margin-top: 10px;
   height: 458px;
 }
 
-/* line 464, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 528, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .company .container .info {
   margin-top: 80px;
   width: 1195px;
@@ -500,14 +622,14 @@ header .container .basket {
   overflow: hidden;
 }
 
-/* line 475, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 539, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .company .container .arrow {
   position: relative;
   margin-top: -94px;
   text-align: center;
 }
 
-/* line 480, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 544, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .company .container .arrow .gradient {
   position: relative;
   top: 0px;
@@ -516,31 +638,32 @@ header .container .basket {
   background: linear-gradient(0deg, #181818 0%, rgba(24, 24, 24, 0.63) 100%);
 }
 
-/* line 490, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 554, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .company .container .info:hover {
   height: 250px;
 }
 
-/* line 494, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 558, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .company .container .info:hover + .arrow {
   display: none;
 }
 
-/* line 500, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 564, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .region {
   margin-top: 10px;
+  height: 970px;
 }
 
-/* line 504, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.region .container object {
-  /*position: relative;
-            left: 620px;
-            bottom: 1150px;*/
-  margin-left: 520px;
-  margin-top: -1150px;
+/* line 569, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.region .container .russia {
+  width: 840px;
+  height: 760px;
+  position: relative;
+  left: 510px;
+  bottom: 570px;
 }
 
-/* line 512, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 588, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .region .container p.VertText {
   position: relative;
   display: inline-block;
@@ -557,7 +680,7 @@ header .container .basket {
   transform: rotate(-90deg);
 }
 
-/* line 516, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 592, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .region .container .list {
   margin-top: 115px;
   margin-left: 10px;
@@ -567,59 +690,59 @@ header .container .basket {
   justify-content: space-between;
 }
 
-/* line 524, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 600, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .region .container .list ul {
   font-weight: 300;
   font-size: 24px;
   line-height: 39px;
 }
 
-/* line 534, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 610, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .region .container .list ul li:hover {
   color: #02E602;
 }
 
-/* line 541, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 617, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .client {
   margin-top: 55px;
 }
 
-/* line 545, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 621, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .client .container .client_logo {
   margin-top: 105px;
   display: flex;
   justify-content: space-between;
 }
 
-/* line 554, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 630, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .news {
   margin-top: 100px;
 }
 
-/* line 558, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 634, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .news .container .news_block {
   margin-top: 105px;
   display: flex;
   justify-content: space-between;
 }
 
-/* line 563, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 639, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .news .container .news_block div {
   width: 422px;
   height: 607px;
 }
 
-/* line 567, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 643, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .news .container .news_block div h4 {
   margin-top: 50px;
 }
 
-/* line 571, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 647, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .news .container .news_block div p {
   margin-top: 30px;
 }
 
-/* line 575, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 651, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .news .container .news_block div .read {
   display: block;
   margin-top: 30px;
@@ -629,13 +752,13 @@ header .container .basket {
   line-height: 16px;
 }
 
-/* line 588, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 664, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .service_etno {
   margin-top: 10px;
   height: 458px;
 }
 
-/* line 594, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 670, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .service_etno .container .info {
   margin-top: 80px;
   width: 1055px;
@@ -647,14 +770,14 @@ header .container .basket {
   overflow: hidden;
 }
 
-/* line 605, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 681, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .service_etno .container .arrow {
   position: relative;
   margin-top: -94px;
   text-align: center;
 }
 
-/* line 610, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 686, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .service_etno .container .arrow .gradient {
   position: relative;
   top: 0px;
@@ -663,31 +786,31 @@ header .container .basket {
   background: linear-gradient(0deg, #181818 0%, rgba(24, 24, 24, 0.63) 100%);
 }
 
-/* line 620, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 696, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .service_etno .container .info:hover {
   height: 250px;
 }
 
-/* line 624, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 700, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .service_etno .container .info:hover + .arrow {
   display: none;
 }
 
-/* line 630, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 706, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 footer {
   margin-top: 125px;
   border-top: #02E602 solid 1px;
   height: 99px;
 }
 
-/* line 635, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 711, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 footer .container {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
 }
 
-/* line 640, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 716, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 footer .container .logo {
   width: 193px;
   display: flex;
@@ -695,7 +818,7 @@ footer .container .logo {
   align-items: center;
 }
 
-/* line 647, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 723, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 footer .container .social {
   width: 380px;
   display: flex;
@@ -703,19 +826,19 @@ footer .container .social {
   align-items: center;
 }
 
-/* line 656, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 732, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage_etno {
   margin-top: 10px;
 }
 
-/* line 660, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 736, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage_etno .container p.VertText {
   position: relative;
   display: inline-block;
-  width: -298px;
+  width: 458px;
   height: 103px;
-  left: 355px;
-  top: 403px;
+  left: -298px;
+  top: 355px;
   font-weight: 700;
   font-size: 100px;
   line-height: 100px;
@@ -725,7 +848,7 @@ footer .container .social {
   transform: rotate(-90deg);
 }
 
-/* line 664, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 740, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage_etno .container .credence {
   margin-top: 6px;
   width: 1302px;
@@ -735,7 +858,7 @@ footer .container .social {
   flex-wrap: wrap;
 }
 
-/* line 672, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 748, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage_etno .container .credence div {
   width: 422px;
   height: 258px;
@@ -744,7 +867,7 @@ footer .container .social {
   text-align: initial;
 }
 
-/* line 679, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 755, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage_etno .container .credence div img {
   display: block;
   float: left;
@@ -753,7 +876,7 @@ footer .container .social {
   margin-right: 11px;
 }
 
-/* line 688, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 764, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage_etno .container .credence div h4 {
   font-size: 22px;
   font-weight: 400;
@@ -761,7 +884,7 @@ footer .container .social {
   margin-top: 5px;
 }
 
-/* line 695, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 771, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_advantage_etno .container .credence div .insert {
   font-size: 18px;
   color: #fff;
@@ -771,7 +894,7 @@ footer .container .social {
   margin-top: 21px;
 }
 
-/* line 709, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 785, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_problems {
   height: 585px;
   background-image: url(../img/Etno/iconDrone_flying.svg), url(../img/Etno/iconLine.svg);
@@ -779,7 +902,7 @@ footer .container .social {
   background-position: left bottom, top right;
 }
 
-/* line 716, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 792, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_problems .container .problem {
   margin-top: 150px;
   display: flex;
@@ -787,19 +910,19 @@ footer .container .social {
   flex-wrap: wrap;
 }
 
-/* line 722, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 798, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_problems .container .problem div {
   width: 369px;
   height: auto;
   margin-bottom: 30px;
 }
 
-/* line 727, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 803, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_problems .container .problem div img {
   float: left;
 }
 
-/* line 731, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 807, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .blok_problems .container .problem div p {
   font-size: 24px;
   font-weight: 300;
@@ -807,7 +930,7 @@ footer .container .social {
   padding-right: 35px;
 }
 
-/* line 745, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 821, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container p.VertText {
   position: relative;
   display: inline-block;
@@ -824,7 +947,7 @@ footer .container .social {
   transform: rotate(-90deg);
 }
 
-/* line 749, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 825, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .VertText_R {
   position: relative;
   display: inline-block;
@@ -841,7 +964,7 @@ footer .container .social {
   transform: rotate(90deg);
 }
 
-/* line 753, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 829, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .info_insect {
   width: 1043px;
   font-weight: 300;
@@ -849,7 +972,7 @@ footer .container .social {
   line-height: 31px;
 }
 
-/* line 760, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 836, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type {
   width: 1310px;
   height: 615px;
@@ -862,13 +985,13 @@ footer .container .social {
   margin-top: 70px;
 }
 
-/* line 771, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 847, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type img {
   float: left;
   margin-right: 45px;
 }
 
-/* line 776, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 852, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type .destroy {
   display: inline-block;
   width: 474px;
@@ -876,44 +999,44 @@ footer .container .social {
   margin-top: 45px;
 }
 
-/* line 782, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 858, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type .destroy p {
   font-weight: 400;
   font-size: 22px;
   line-height: 22px;
 }
 
-/* line 788, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 864, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type .destroy img {
   float: left;
   margin-right: 20px;
 }
 
-/* line 793, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 869, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type .destroy .destroy_insert {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 798, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 874, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type .destroy .destroy_insert img {
   margin-right: 15px;
   margin-top: 10px;
 }
 
-/* line 804, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 880, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type .destroy .destroy_insert li {
   margin-left: 60px;
   margin-bottom: 20px;
 }
 
-/* line 811, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 887, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type .destroy ul li:last-of-type {
   margin-left: 46px;
 }
 
-/* line 817, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 893, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type_R {
   width: 1310px;
   height: 615px;
@@ -926,13 +1049,13 @@ footer .container .social {
   margin-top: 70px;
 }
 
-/* line 828, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 904, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type_R img {
   float: right;
   margin-left: 45px;
 }
 
-/* line 833, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 909, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type_R .destroy {
   display: inline-block;
   width: 474px;
@@ -940,20 +1063,20 @@ footer .container .social {
   margin-top: 45px;
 }
 
-/* line 839, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 915, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type_R .destroy p {
   font-weight: 400;
   font-size: 22px;
   line-height: 22px;
 }
 
-/* line 845, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 921, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type_R .destroy img {
   float: left;
   margin-right: 20px;
 }
 
-/* line 850, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 926, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type_R .destroy .destroy_insert {
   margin-top: 30px;
   display: flex;
@@ -961,35 +1084,35 @@ footer .container .social {
   flex-wrap: wrap;
 }
 
-/* line 856, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 932, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type_R .destroy .destroy_insert img {
   margin-right: 15px;
   margin-top: 10px;
 }
 
-/* line 862, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 938, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type_R .destroy .destroy_insert li {
   margin-bottom: 20px;
 }
 
-/* line 869, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 945, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type_R .destroy ul li:first-of-type {
   margin-right: 12px;
 }
 
-/* line 873, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 949, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .block_insect .container .insect_type_R .destroy ul li:nth-of-type(2) {
   margin-right: 12px;
 }
 
-/* line 882, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 958, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .stageWork {
   background-image: url(../img/Etno/iconLine_1.png), url(../img/Etno/iconLine_2.png);
   background-repeat: no-repeat, no-repeat;
   background-position: 7% 100%, 75% 50%;
 }
 
-/* line 889, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 965, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .stageWork .container .arrow img {
   position: relative;
   top: -325px;
@@ -997,12 +1120,12 @@ footer .container .social {
   margin-right: 150px;
 }
 
-/* line 897, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 973, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .stageWork .container .arrow img:nth-of-type(2) {
   margin-right: 185px;
 }
 
-/* line 901, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 977, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .stageWork .container .stages {
   margin-top: 104px;
   display: grid;
@@ -1013,19 +1136,19 @@ footer .container .social {
   align-items: center;
 }
 
-/* line 912, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 988, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .stageWork .container .stages .preparation {
   background-color: #1E1D1D;
   padding: 30px 40px 60px 30px;
 }
 
-/* line 916, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 992, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .stageWork .container .stages .preparation img {
   float: left;
   margin-right: 15px;
 }
 
-/* line 921, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 997, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .stageWork .container .stages .preparation p {
   font-weight: 300;
   font-size: 22px;
@@ -1033,7 +1156,7 @@ footer .container .social {
   margin-left: 55px;
 }
 
-/* line 931, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1007, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .stageWork .container .stages .done p {
   font-weight: 700;
   font-size: 50px;
@@ -1043,12 +1166,12 @@ footer .container .social {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* line 941, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1017, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .stageWork .container .stages .done .center {
   text-align: center;
 }
 
-/* line 953, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1029, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .needHelp .container .square {
   position: relative;
   margin: 0 auto;
@@ -1058,12 +1181,12 @@ footer .container .social {
   padding-left: 76px;
 }
 
-/* line 962, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1038, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .needHelp .container .square .out {
   top: 25px;
 }
 
-/* line 966, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1042, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .needHelp .container .square img {
   float: right;
   position: relative;
@@ -1071,21 +1194,21 @@ footer .container .social {
   margin-top: -250px;
 }
 
-/* line 973, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1049, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .needHelp .container .square .request {
   margin-top: 65px;
   font-size: 24px;
   line-height: 40px;
 }
 
-/* line 979, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1055, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .needHelp .container .square form {
   position: relative;
   margin-top: 80px;
   z-index: 1;
 }
 
-/* line 985, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1061, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .needHelp .container .square form input {
   width: 200px;
   margin-right: 42px;
@@ -1099,26 +1222,26 @@ footer .container .social {
   color: #fff;
 }
 
-/* line 1001, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1077, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .needHelp .container .square form input:hover {
   border-color: #fff;
 }
 
-/* line 1005, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1081, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .needHelp .container .square form input:focus {
   outline: none;
   border-color: #02E602;
   color: #fff;
 }
 
-/* line 1012, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1088, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .needHelp .container .square a {
   display: inline-block;
   margin-top: 20px;
   margin-left: 20px;
 }
 
-/* line 1019, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1095, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .needHelp .container .square::after {
   content: "";
   position: absolute;
@@ -1130,19 +1253,19 @@ footer .container .social {
   z-index: 0;
 }
 
-/* line 1033, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1109, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews {
   background-image: url(../img/News/iconDron.svg), url(../img/News/XMLID_1_.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: 91% 4%, 0% 117%;
 }
 
-/* line 1039, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1115, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .out {
   margin-top: -11px;
 }
 
-/* line 1043, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1119, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container p.VertText {
   position: relative;
   display: inline-block;
@@ -1159,7 +1282,7 @@ footer .container .social {
   transform: rotate(-90deg);
 }
 
-/* line 1047, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1123, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .VertText_R {
   position: relative;
   display: inline-block;
@@ -1176,12 +1299,12 @@ footer .container .social {
   transform: rotate(90deg);
 }
 
-/* line 1051, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1127, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .fourNews {
   margin-top: -59px;
 }
 
-/* line 1054, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1130, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .fourNews .fullNews {
   width: 1310px;
   height: 388px;
@@ -1190,18 +1313,18 @@ footer .container .social {
   padding: 30px 65px 75px 30px;
 }
 
-/* line 1061, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1137, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .fourNews .fullNews img {
   float: left;
 }
 
-/* line 1066, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1142, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .fourNews .fullNews h4 {
   margin-top: 51px;
   margin-left: 554px;
 }
 
-/* line 1071, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1147, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .fourNews .fullNews .date {
   font-weight: 300;
   font-size: 16px;
@@ -1210,13 +1333,13 @@ footer .container .social {
   top: -23px;
 }
 
-/* line 1079, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1155, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .fourNews .fullNews .insert {
   clear: none;
   margin: 8px 153px 30px 554px;
 }
 
-/* line 1085, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1161, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .fourNews .fullNews a {
   border: 0;
   border-bottom: 1px solid;
@@ -1227,7 +1350,7 @@ footer .container .social {
   font-size: 16px;
 }
 
-/* line 1100, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1176, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .navbar {
   width: 188px;
   height: 40px;
@@ -1236,28 +1359,28 @@ footer .container .social {
   font-size: 40px;
 }
 
-/* line 1107, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1183, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .navbar a {
   margin-right: 28px;
 }
 
-/* line 1112, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1188, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .navbar a:hover {
   color: #02E602;
 }
 
-/* line 1117, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1193, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .pageNews .container .navbar a.active {
   color: #02E602;
 }
 
-/* line 1126, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.Spraying_service {
+/* line 1202, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.Spraying_service, .air_photo {
   height: 505px;
 }
 
-/* line 1130, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.Spraying_service .container .info {
+/* line 1206, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.Spraying_service .container .info, .air_photo .container .info {
   margin-top: 110px;
   width: 1031px;
   height: 125px;
@@ -1268,15 +1391,15 @@ footer .container .social {
   overflow: hidden;
 }
 
-/* line 1141, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.Spraying_service .container .arrow {
+/* line 1217, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.Spraying_service .container .arrow, .air_photo .container .arrow {
   position: relative;
   margin-top: -94px;
   text-align: center;
 }
 
-/* line 1146, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.Spraying_service .container .arrow .gradient {
+/* line 1222, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.Spraying_service .container .arrow .gradient, .air_photo .container .arrow .gradient {
   position: relative;
   top: 0px;
   width: 1310px;
@@ -1284,23 +1407,23 @@ footer .container .social {
   background: linear-gradient(0deg, #181818 0%, rgba(24, 24, 24, 0.63) 100%);
 }
 
-/* line 1156, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.Spraying_service .container .info:hover {
+/* line 1232, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.Spraying_service .container .info:hover, .air_photo .container .info:hover {
   height: 250px;
 }
 
-/* line 1160, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
-.Spraying_service .container .info:hover + .arrow {
+/* line 1236, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.Spraying_service .container .info:hover + .arrow, .air_photo .container .info:hover + .arrow {
   display: none;
 }
 
-/* line 1166, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1242, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .Positive,
 .negative {
   background: url(../img/Spraying/iconDron_1.svg) no-repeat 92% 15%;
 }
 
-/* line 1173, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1249, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .Positive .container p.VertText,
 .negative .container p.VertText {
   position: relative;
@@ -1318,7 +1441,7 @@ footer .container .social {
   transform: rotate(-90deg);
 }
 
-/* line 1177, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1253, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .Positive .container .VertText_R,
 .negative .container .VertText_R {
   position: relative;
@@ -1336,14 +1459,14 @@ footer .container .social {
   transform: rotate(90deg);
 }
 
-/* line 1181, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1257, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .Positive .container .threeСolumns,
 .negative .container .threeСolumns {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 1185, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1261, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .Positive .container .threeСolumns div,
 .negative .container .threeСolumns div {
   width: 422px;
@@ -1352,20 +1475,20 @@ footer .container .social {
   padding: 47px 25px 60px;
 }
 
-/* line 1191, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1267, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .Positive .container .threeСolumns div img:first-of-type,
 .negative .container .threeСolumns div img:first-of-type {
   float: left;
   margin-right: 15px;
 }
 
-/* line 1196, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1272, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .Positive .container .threeСolumns div .resume,
 .negative .container .threeСolumns div .resume {
   margin-top: 45px;
 }
 
-/* line 1199, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1275, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .Positive .container .threeСolumns div .resume li,
 .negative .container .threeСolumns div .resume li {
   font-weight: 300;
@@ -1373,17 +1496,84 @@ footer .container .social {
   margin-top: 6px;
 }
 
-/* line 1204, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1280, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .Positive .container .threeСolumns div .resume li p,
 .negative .container .threeСolumns div .resume li p {
   margin-left: 38px;
   line-height: 31px;
 }
 
-/* line 1215, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+/* line 1291, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .negative {
   margin-top: 70px;
   background: none;
+}
+
+/* line 1296, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.nozzle {
+  background: url(../img/Spraying/XMLID_1_.svg) no-repeat center center;
+}
+
+/* line 1300, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.nozzle .container p.VertText {
+  position: relative;
+  display: inline-block;
+  width: 608px;
+  height: 103px;
+  left: -367px;
+  top: 403px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: rgba(70, 70, 70, 0.26);
+  text-shadow: 0px 4px 4px #00000040;
+  transform: rotate(-90deg);
+}
+
+/* line 1304, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.nozzle .container .twoColumns {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 1308, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.nozzle .container .twoColumns div {
+  width: 502px;
+  height: 688px;
+  background-color: #1E1D1D;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 35px 70px 155px;
+}
+
+/* line 1318, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.nozzle .container .twoColumns div h3 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 34px;
+}
+
+/* line 1329, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.nozzle .container .twoColumns div .resume li {
+  margin-top: 6px;
+}
+
+/* line 1332, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.nozzle .container .twoColumns div .resume li img {
+  float: left;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+/* line 1339, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
+.nozzle .container .twoColumns div .resume li p {
+  margin-left: 38px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

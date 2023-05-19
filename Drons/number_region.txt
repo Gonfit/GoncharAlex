@@ -1,5 +1,5 @@
-86 part 3 region
-85 star 1 region
+83 part 3 region
+82 star 1 region
 69 this 20 full
 61 this 17 full
 59 this 1 full
