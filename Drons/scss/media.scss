@@ -1,0 +1,139 @@
+@media all and (max-width:1570px) {
+
+    @mixin VertText($width: 458px, $left: -290px, $top: 403px, $transform: rotate(-90deg)) {
+        position: relative;
+        display: inline-block;
+        width: $width;
+        height: 103px;
+        left: $left;
+        top: $top;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 100px;
+        text-transform: uppercase;
+        color: rgba(70, 70, 70, 0.26);
+        text-shadow: 0px 4px 4px #00000040;
+        transform: $transform;
+    }
+
+    .block_products {
+
+        p.VertText {
+            display: none;
+        }
+
+        .container {
+            .top_sales {
+                margin-top: 102px;
+            }
+        }
+    }
+
+
+    .region {
+
+        .container {
+
+            p.VertText {
+                display: none;
+            }
+        }
+    }
+
+    .client {
+        margin-top: -50px;
+    }
+
+    .blok_advantage_etno {
+
+
+        .container {
+            p.VertText {
+                display: none;
+            }
+
+            .credence {
+                margin-top: 109px;
+            }
+        }
+    }
+
+    .block_insect {
+        .container {
+            p.VertText {
+                display: none;
+            }
+
+            .VertText_R {
+                display: none;
+            }
+
+            .info_insect {
+                margin-top: 103px;
+            }
+        }
+    }
+
+    .pageNews {
+
+        .container {
+
+            p.VertText {
+                display: none
+            }
+
+            .VertText_R {
+                display: none;
+            }
+
+            .fourNews {
+                margin-top: 95px;
+            }
+        }
+    }
+
+    .Positive,
+    .negative {
+
+        .container {
+
+            p.VertText {
+                @include VertText(500px, 90px, 485px, rotate(0deg));
+            }
+
+            .VertText_R {
+                @include VertText(290px, 965px, 410px, rotate(0deg));
+            }
+
+            .threeСolumns {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .nozzle {
+
+        .container {
+            p.VertText {
+                display: none;
+            }
+
+            .twoColumns {
+                margin-top: 102px;
+            }
+        }
+    }
+}
+
+@media all and (max-width:1330px) {
+    .region {      
+
+        .container {
+            .russia {
+                left: 285px;
+                bottom: 610px;
+
+            }
+        }
+    }
+}

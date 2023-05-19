@@ -567,11 +567,11 @@ header {
 
     .container {
         .russia{
-            width: 840px;
+            width: 675px;
             height: 760px;
             position: relative;
-            left: 510px;
-            bottom: 570px;
+            left: 580px;
+            bottom: 725px;
             
             // object {
             //     // position: relative;
@@ -823,7 +823,7 @@ footer {
         }
 
         .VertText_R {
-            @include VertText(498px, 1165px, 525px, rotate(90deg));
+            @include VertText(498px, 1120px, 525px, rotate(90deg));
         }
 
         .info_insect {
@@ -1251,7 +1251,7 @@ footer {
         }
 
         .VertText_R {
-            @include VertText(498px, 1135px, 320px, rotate(90deg));
+            @include VertText(498px, 1120px, 320px, rotate(90deg));
         }
 
         .threeСolumns {

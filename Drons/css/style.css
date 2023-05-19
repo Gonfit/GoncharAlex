@@ -656,11 +656,11 @@ header .container .basket .contentMenu a:hover {
 
 /* line 569, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
 .region .container .russia {
-  width: 840px;
+  width: 675px;
   height: 760px;
   position: relative;
-  left: 510px;
-  bottom: 570px;
+  left: 580px;
+  bottom: 725px;
 }
 
 /* line 588, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/style.scss */
@@ -953,7 +953,7 @@ footer .container .social {
   display: inline-block;
   width: 498px;
   height: 103px;
-  left: 1165px;
+  left: 1120px;
   top: 525px;
   font-weight: 700;
   font-size: 100px;
@@ -1448,7 +1448,7 @@ footer .container .social {
   display: inline-block;
   width: 498px;
   height: 103px;
-  left: 1135px;
+  left: 1120px;
   top: 320px;
   font-weight: 700;
   font-size: 100px;
