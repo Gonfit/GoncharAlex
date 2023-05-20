@@ -164,14 +164,8 @@
                 font-size: 62px;
             }
 
-            .advantage {
-                position: relative;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
+            .advantage {               
                 width: 500px;
-                height: 84px;
-                left: 0;
                 top: 90px;
 
                 img {
@@ -205,6 +199,13 @@
                 justify-content: space-around;
                 
             }
+        }
+    }
+    .block_products {
+        margin-top: 10px;
+        background: none;
+        .container{
+            
         }
     }
 

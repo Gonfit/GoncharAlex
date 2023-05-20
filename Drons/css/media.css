@@ -140,16 +140,10 @@
   .first_screenEtno .container .advantage,
   .first_screenSpray .container .advantage,
   .first_screenMap .container .advantage {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 500px;
-    height: 84px;
-    left: 0;
     top: 90px;
   }
-  /* line 177, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
+  /* line 171, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
   .first_screen .container .advantage img,
   .first_screenEtno .container .advantage img,
   .first_screenSpray .container .advantage img,
@@ -158,7 +152,7 @@
     height: 100px;
     left: -130px;
   }
-  /* line 183, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
+  /* line 177, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
   .first_screen .container .advantage p,
   .first_screenEtno .container .advantage p,
   .first_screenSpray .container .advantage p,
@@ -166,26 +160,31 @@
     font-size: 36px;
     line-height: 30px;
   }
-  /* line 187, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
+  /* line 181, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
   .first_screen .container .advantage p span,
   .first_screenEtno .container .advantage p span,
   .first_screenSpray .container .advantage p span,
   .first_screenMap .container .advantage p span {
     font-size: 20px;
   }
-  /* line 196, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
+  /* line 190, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
   .blok_advantage {
     margin-top: -105px;
     background: none;
   }
-  /* line 201, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
+  /* line 195, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
   .blok_advantage .container .credence {
     margin-top: 80px;
     width: 1009px;
     height: 800px;
     justify-content: space-around;
   }
-  /* line 214, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
+  /* line 204, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
+  .block_products {
+    margin-top: 10px;
+    background: none;
+  }
+  /* line 215, ../../Users/Otec/Desktop/IT обучение/GoncharAlex/Drons/scss/media.scss */
   .region .container .russia {
     left: 285px;
     bottom: 610px;
