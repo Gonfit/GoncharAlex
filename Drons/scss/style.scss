@@ -177,25 +177,29 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .menuDrop{
+
+            .menuDrop {
                 position: relative;
                 display: inline-block;
-                .contentMenu{
+
+                .contentMenu {
                     display: none;
                     background-color: rgba(24, 24, 24, 0.705);
-                    position: absolute; 
+                    position: absolute;
                     left: -160px;
                     min-width: 290px;
                     z-index: 2;
                     padding: 20px 0px 15px 15px;
-                    a{
+
+                    a {
                         display: block;
                         height: 40px;
                         margin-top: 15px;
                         font-weight: 400;
                         font-size: 24px;
                         line-height: 24px;
-                        img{
+
+                        img {
                             float: left;
                             margin-right: 15px;
                             margin-top: -5px;
@@ -203,13 +207,15 @@ header {
                     }
                 }
             }
+
             .menuDrop:hover .contentMenu {
                 display: block;
             }
+
             .contentMenu a:hover {
                 color: $colgr;
             }
-            
+
 
         }
 
@@ -238,6 +244,7 @@ header {
             top: 205px;
             font-size: 72px;
         }
+
         .sprayMini {
             width: 458px;
             height: 80px;
@@ -331,12 +338,15 @@ header {
     }
 
 }
+
 .first_screenEtno {
     background-image: url(../img/Etno/bgBackground.jpg);
 }
+
 .first_screenSpray {
     background-image: url(../img/Spraying/bgBackground.jpg);
 }
+
 .first_screenMap {
     background-image: url(../img/Mapping/background.jpg);
 }
@@ -566,24 +576,24 @@ header {
     height: 970px;
 
     .container {
-        .russia{
+        .russia {
             width: 675px;
             height: 760px;
             position: relative;
             left: 580px;
             bottom: 725px;
-            
+
             // object {
             //     // position: relative;
             //     // left: 620px;
             //     // bottom: 1150px;
             //     // margin-left: 520px;
             //     // margin-top: -700px;            
-                
-            
+
+
             // }
         }
-        
+
 
         p.VertText {
             @include VertText;
@@ -734,7 +744,7 @@ footer {
 
     .container {
         p.VertText {
-            @include VertText(458px,-298px, 355px);
+            @include VertText(458px, -298px, 355px);
         }
 
         .credence {
@@ -1199,7 +1209,8 @@ footer {
 
 }
 
-.Spraying_service, .air_photo {
+.Spraying_service,
+.air_photo {
     height: 505px;
 
     .container {
@@ -1326,14 +1337,14 @@ footer {
                 .resume {
 
 
-                    li {                        
-                        margin-top: 6px;                       
+                    li {
+                        margin-top: 6px;
 
                         img {
                             float: left;
                             margin-right: 15px;
                             margin-top: 10px;
-                            
+
                         }
 
                         p {
@@ -1345,6 +1356,105 @@ footer {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.AirPhotoPositive {
+    background: url(../img/Mapping/iconLine1.svg), url(../img/Mapping/iconDrone1gray.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 42% 19%, 86% 23%;
+    background-size: 56%, 14%;
+    .container {
+        p.VertText {
+            @include VertText(530px, -367px, 350px);
+        }
+
+        .plus {
+            
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            div {
+                width: 534px;
+                height: 269px;
+                margin: 35px 0;
+                background: #1E1D1D;
+                padding: 60px 60px 66px 72px;
+                text-align: initial;
+
+                img {
+                    display: block;
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 11px;
+
+                }
+            }
+
+        }
+    }
+}
+.AirPhotoProcces{
+    margin-top: 35px;
+    .container{
+        .insert{
+            width: 750px;
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+        [src*='tablet']{
+            float: left;
+            margin-right: 90px;
+        }
+        .tab{
+            overflow: hidden;
+            button {
+                background-color: #ffffff00;
+                color: #fff;
+                font-size: 24px;
+                margin: 0;
+                margin-bottom: 60px;
+                float: left;
+                border: 0;
+                border-bottom: 4px solid #464646;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+            }
+        }
+        .tab button:hover {
+            border-bottom: 4px solid $colgr;
+        }
+        .tab button.active {
+            border-bottom: 4px solid #01B601;
+        }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            /* border: 1px solid #ccc;
+            border-top: none; */
+            img {
+                float: left;
+                margin-right: 15px;
+                margin-top: 10px;
+
+            }
+
+            p {
+                margin-left: 38px;
+                margin-bottom: 30px;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 40px;
+
+            }
+            button{
+                margin: 0;
+                margin-top: 20px;
             }
         }
     }

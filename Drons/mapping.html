@@ -45,9 +45,9 @@
 
                     </div>
                 </div>
-                
+
             </div>
-           
+
         </div>
     </header>
 
@@ -168,27 +168,215 @@
                 Аэрофотосъемки разделяется на этапы полевых и камеральных работ, при этом набор данных, получаемых по
                 результатам камеральных работ, варьируется в зависимости от требований заказчика
             </p>
-            <div class="works">
-                <div class="worksImg">
-                    <img src="img/Mapping/image_tablet.png" alt="tablet">
-                </div>
-                <div class="worksInfo">
-                    <ul class="worksType">
-                        <li>Полевые работы</li>
-                        <li>Камеральные работы</li>
-                    </ul>
-                    <ul>
-
-                    </ul>
-
-                </div>               
-                
+            <img src="img/Mapping/image_tablet.png" alt="tablet">
+            <div class="tab">
+                <button class="tablinks" onclick="worksInfo(event, 'square')" id="defaultOpen">Полевые работы</button>
+                <button class="tablinks" onclick="worksInfo(event, 'camera')">Камеральные работы</button>
+            </div>
+            <div id="square" class="tabcontent">
+                <img src="img/Mapping/iconCheck.svg" alt="Check">
+                <p>Получение разрешений на аэрофотосъемку </p>
+                <img src="img/Mapping/iconCheck.svg" alt="Check">
+                <p>Выполнение аэрофотосъемки с использованием БПЛА </p>
+                <button>Получить консультацию</button>
             </div>
 
+            <div id="camera" class="tabcontent">
+                <img src="img/Mapping/iconCheck.svg" alt="Check">
+                <p>Какая-либо информация 1 </p>
+                <img src="img/Mapping/iconCheck.svg" alt="Check">
+                <p>Какая-либо информация 2</p>
+                <button>Получить консультацию</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- AirPhotoMaterial -->
+
+    <div class="AirPhotoMaterial">
+        <div class="container">
+            <p class="VertText_R">материалы</p>
+            <p class="out">
+                Получаемые данные<span>Материалы аэрофотосъемки</span>
+            </p>
+            <p class="insert">
+                Фотограмметрическая  обработка, выполняемая в Pix4D, позволяет получать необходимые данные для дальнейшего использования
+            </p>
+            <div class="tab">
+                <button class="tablinks" onclick="model(event, 'photo')" id="defaultOpen">Ортофотоплан</button>
+                <button class="tablinks" onclick="model(event, 'NVDI')">NDVI</button>
+                <button class="tablinks" onclick="model(event, 'digital')">Цифровая модель местности</button>
+                <button class="tablinks" onclick="model(event, '3d_model')">3D-модель местности</button>
+            </div>
+            <div id="photo" class="tabcontent">
+                <img src="img/Mapping/image_land.jpg" alt="land">
+                <p class="protect">
+                    Одним файлом или в виде тайлов. Форматы: geotiff, jpg, png, GoogleEarth KML\KMZ
+                </p>
+                <img src="img/Mapping/iconHigh_resolutionBig.svg" alt="resolution">
+                <p>Разрешение до 2см/пикс </p>
+                <img src="img/Mapping/iconMashab.svg" alt="Mashab">
+                <p>Масштаб от 1:500 до 1:10000 </p>
+                <img src="img/Mapping/iconDesign_toolBig.svg" alt="tool">
+                <p>Высокая геодезическая  точность </p>
+            </div>
+
+            <div id="NVDI" class="tabcontent">
+                <img src="img/Mapping/image_land.jpg" alt="land">
+                <p class="protect">
+                    Информация про NVDI
+                </p>
+                <img src="img/Mapping/iconHigh_resolutionBig.svg" alt="resolution">
+                <p>Преимущества 1 </p>
+                <img src="img/Mapping/iconMashab.svg" alt="Mashab">
+                <p>Преимущества 2</p>
+                <img src="img/Mapping/iconDesign_toolBig.svg" alt="tool">
+                <p>Преимущества 3 </p>
+                
+            </div>
+            <div id="digital" class="tabcontent">
+                <img src="img/Mapping/image_land.jpg" alt="land">
+                <p class="protect">
+                    Информация про Digital
+                </p>
+                <img src="img/Mapping/iconHigh_resolutionBig.svg" alt="resolution">
+                <p>Преимущества 1 </p>
+                <img src="img/Mapping/iconMashab.svg" alt="Mashab">
+                <p>Преимущества 2</p>
+                <img src="img/Mapping/iconDesign_toolBig.svg" alt="tool">
+                <p>Преимущества 3 </p>
+            </div>
+
+            <div id="3d_model" class="tabcontent">
+                <img src="img/Mapping/image_land.jpg" alt="land">
+                <p class="protect">
+                    Информация про 3d_model
+                </p>
+                <img src="img/Mapping/iconHigh_resolutionBig.svg" alt="resolution">
+                <p>Преимущества 1 </p>
+                <img src="img/Mapping/iconMashab.svg" alt="Mashab">
+                <p>Преимущества 2</p>
+                <img src="img/Mapping/iconDesign_toolBig.svg" alt="tool">
+                <p>Преимущества 3 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- areaApp -->
+
+    <div class="areaApp">
+        <div class="container">
+            <p class="out">
+                Области применения<span>Применение аэрофотосъемки </span>
+            </p>
+            <div class="tabVert">
+                <button class="tablinks" onclick="model(event, 'harvest')" id="defaultOpen">Сельское хозяйство</button>
+                <button class="tablinks" onclick="model(event, 'forest')">Лесное хозяйство</button>
+                <button class="tablinks" onclick="model(event, 'blueprint')">Геодезия</button>
+                <button class="tablinks" onclick="model(event, 'power')">Энергетика</button>
+                <button class="tablinks" onclick="model(event, 'building')" >Строительство</button>
+                <button class="tablinks" onclick="model(event, 'citybuilding')">Градостроительство</button>
+                <button class="tablinks" onclick="model(event, 'mountains')">Маркшейдерия</button>
+                <button class="tablinks" onclick="model(event, 'thermo')">Тепловизионная съемка</button>
+            </div>
+            <div id="harvest" class="tabcontent">                
+                <p class="protect">
+                    Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества растений при рядной посадке, зарастания сорняками, 
+                    состояния переувлажненных или засушливых участков полей, расчет  NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий  
+                </p>
+                <img src="img/Mapping/image_land2.jpg" alt="land2">
+            </div> 
+            <div id="forest" class="tabcontent">                
+                <p class="protect">
+                    информация косаемая лесного хозяйства 
+                </p>
+                <img src="img/Mapping/image_land2.jpg" alt="land2">
+            </div>
+            <div id="blueprint" class="tabcontent">                
+                <p class="protect">
+                    информация косаемая использования в геодезии
+                </p>
+                <img src="img/Mapping/image_land2.jpg" alt="land2">
+            </div> 
+            <div id="power" class="tabcontent">                
+                <p class="protect">
+                    информация косаемая использования в энергетике
+                </p>
+                <img src="img/Mapping/image_land2.jpg" alt="land2">
+            </div> 
+            <div id="building" class="tabcontent">                
+                <p class="protect">
+                    информация косаемая использования в строительстве
+                </p>
+                <img src="img/Mapping/image_land2.jpg" alt="land2">
+            </div> 
+            <div id="citybuilding" class="tabcontent">                
+                <p class="protect">
+                    информация косаемая использования в градостроительстве
+                </p>
+                <img src="img/Mapping/image_land2.jpg" alt="land2">
+            </div> 
+            <div id="mountains" class="tabcontent">                
+                <p class="protect">
+                    информация косаемая использования в маркшейдерии
+                </p>
+                <img src="img/Mapping/image_land2.jpg" alt="land2">
+            </div> 
+            <div id="thermo" class="tabcontent">                
+                <p class="protect">
+                    информация косаемая использования в тепловизионная съемка
+                </p>
+                <img src="img/Mapping/image_land2.jpg" alt="land2">
+            </div> 
+                  
 
         </div>
 
     </div>
+
+    <!--needHelp-->
+
+    <div class="needHelp">
+        <div class="container">
+            <p class="VertText">напишите нам</p>
+            <div class="square">
+                <p class="out">
+                    Напишите нам<span>Нужна помошь?</span>
+                </p>
+                <img src="img/Etno/image_Drone.png" alt="Drone">
+                <p class="request">
+                    Заполните форму и мы за 5 минут подскажем вам лучшие способы <br> защиты вашего урожая
+                </p>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" name="tel" placeholder="Ваш телефон" required>
+                    <input type="email" name="mail" placeholder="Ваш Email" required>
+                    <button type="submit" value="Отправить">Отправить</button>
+                </form>
+                <a href="#">Политика конфидициальности</a>
+            </div>
+        </div>
+    </div>
+    <!--foter-->
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img/LogoAgroScout.png" alt="LogoAgroScout"></a>
+                <img src="img/iconPhone.svg" alt="Phone">
+                <a href="tel:"><span>+7861 21791 18</span></a>
+            </div>
+            <div class="social">
+                <span>Подписывайтесь на наши соц. сети</span>
+                <a href="https://vk.com/"><img src="img/iconVk.svg" alt="VK"></a>
+                <a href="https://www.instagram.com/"><img src="img/iconinstagram.svg" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/"><img src="img/iconTikTok.svg" alt="TikTok"></a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="script/scriptMap/script.js"></script>
 
 
 </body>

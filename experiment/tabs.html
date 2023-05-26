@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Стиль вкладки */
+    .tab {
+        overflow: hidden;
+        /* border: 1px solid #ccc;
+        background-color: #f1f1f1; */
+    }
+
+    /* Стиль кнопок, которые используются для открытия содержимого вкладки */
+    .tab button {
+        background-color: #ffffff00;
+        float: left;
+        border: 0;
+        border-bottom: 4px solid #464646;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+
+    /* Изменение цвета фона кнопок при наведении курсора */
+    .tab button:hover {
+        border-bottom: 4px solid #02E602;
+    }
+
+    /* Создание активного/текущего класса связи вкладки */
+    .tab button.active {
+        border-bottom: 4px solid #01B601;
+    }
+
+    /* Стиль содержимого вкладки */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        /* border: 1px solid #ccc;
+        border-top: none; */
+    }
+</style>
+
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Лондон</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Париж</button>
+        <!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">Токио</button> -->
+    </div>
+
+    <!-- Содержимое вкладки -->
+    <div id="London" class="tabcontent">
+        <h3>Лондон</h3>
+        <p>Лондон является столицей Англии.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <h3>Париж</h3>
+        <p>Париж является столицей Франции.</p>
+    </div>
+
+    <!-- <div id="Tokyo" class="tabcontent">
+        <h3>Токио</h3>
+        <p>Токио является столицей Японии.</p>
+    </div> -->
+
+    <script>
+        function openCity(evt, cityName) {
+            // Объявить все переменные
+            var i, tabcontent, tablinks;
+
+            // Получить все элементы с помощью class="tabcontent" и спрятать их
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Получить все элементы с помощью class="tablinks" и удалить class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Показать текущую вкладку и добавить "active" класс для кнопки, которая открыла вкладку
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+
+        }
+        // Получить элемент с помощью id="defaultOpen" и нажмите на нее
+        document.getElementById("defaultOpen").click();
+
+    </script>
+</body>
+
+</html>
